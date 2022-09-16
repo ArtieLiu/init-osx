@@ -1,0 +1,36 @@
+# https://www.talkingquickly.co.uk/2021/01/macos-setup-with-ansible/
+- hosts: localhost
+  tasks:
+    - name: Make sure homebrew bin is in path
+      ansible.builtin.lineinfile:
+        path: /etc/paths
+        state: present
+        line: '/opt/homebrew/bin'
+      become: true
+      become_user: root
+
+    - name: 'add custom homebrew repos'
+      community.general.homebrew_tap:
+        name: [
+          adoptopenjdk/openjdk,
+          fishtown-analytics/dbt,
+          heroku/brew,
+          homebrew/cask-versions,
+          thoughtbot/formulae,
+          weaveworks/tap,
+        ]
+
+    - name: Install core packages via brew casks
+      community.general.homebrew_cask:
+        name: "{{ item }}"
+      ignore_errors: yes
+      with_items:
+        - 1password
+
+    - name: "Install homebrew packages"
+      community.general.homebrew:
+        name: [
+          'mas'
+        ]
+        state: present
+        update_homebrew: yes
