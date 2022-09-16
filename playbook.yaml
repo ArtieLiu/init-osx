@@ -33,6 +33,7 @@
         - sublime-text
         - sublime-merge
         - font-source-code-pro
+        - kanbanier
 
     - name: "Install homebrew packages"
       community.general.homebrew:
