@@ -1,0 +1,29 @@
+- name: "Install brew casks"
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  ignore_errors: yes
+  with_items:
+    - google-chrome
+    - clashx
+    - wechat
+    - skype
+    - zoom
+    - slack
+    - obsidian
+    - microsoft-office
+    - snipaste
+    - bartender
+    - copyclip
+    - hammerspoon
+    - hyperkey
+    - karabiner-elements
+    - keepingyouawake
+    - mirrordisplays
+    - spectacle
+    - stats
+    - lunar
+    - intellij-idea
+    - rancher
+    - visual-studio-code
+    - sublime-text
+    - sublime-merge
