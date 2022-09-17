@@ -2,6 +2,33 @@
 
 - hosts: localhost
   tasks:
+
+    - name: 'add custom homebrew repos'
+      community.general.homebrew_tap:
+        name: [
+          homebrew/cask-fonts
+        ] 
+        
+    - name: "Install homebrew packages"
+      community.general.homebrew:
+        name: [
+          'watch',
+          'git',
+          'htop',
+          'neovim',
+          'ripgrep',
+          'autojump',
+          'bat',
+          'gource',
+          'docker',
+          'jq',
+          'tree',
+          'wget',
+          'tldr',
+        ]
+        state: present
+        update_homebrew: no
+
     - name: "Install brew casks"
       community.general.homebrew_cask:
         name: "{{ item }}"
@@ -11,7 +38,6 @@
         - clashx
         - wechat
         - skype
-        - microsoft-outlook
         - zoom
         - slack
         - obsidian
@@ -33,30 +59,3 @@
         - sublime-text
         - sublime-merge
         - font-source-code-pro
-        - kanbanier
-
-    - name: "Install homebrew packages"
-      community.general.homebrew:
-        name: [
-          'mas'
-          'watch'
-          'git'
-          'htop'
-          'lorem'
-          'maven'
-          'mit-scheme'
-          'neovim'
-          'ripgrep'
-          'zsh-syntax-highlighting'
-          'autojump'
-          'bat'
-          'gource'
-          'docker'
-          'jenv'
-          'jq'
-          'tree'
-          'wget'
-          'tldr'
-        ]
-        state: present
-        update_homebrew: no
