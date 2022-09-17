@@ -1,0 +1,3 @@
+- include: install-clash.yaml
+- include: install-xcode.yaml
+
