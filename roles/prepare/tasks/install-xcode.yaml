@@ -1,5 +1,0 @@
-- name: install xcode
-  ansible.builtin.command: xcode-select --install
-
-- name: accept xcode license
-  ansible.builtin.command: sudo xcodebuild -license accept
