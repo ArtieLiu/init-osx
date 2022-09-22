@@ -1,0 +1,6 @@
+- name: Copy ideavimrc
+  ansible.builtin.file:
+    src: "~/Projects/init-osx/roles/configure_ideavim/tasks/.ideavimrc"
+    path: "~/.ideavimrc"
+    state: link
+    force: true
