@@ -1,0 +1,5 @@
+- name: Configuring Karabiner
+  file:
+    src: "~/Projects/init-osx/roles/configure_karabiner/tasks/karabiner"
+    path: "~/.config/karabiner"
+    state: link
