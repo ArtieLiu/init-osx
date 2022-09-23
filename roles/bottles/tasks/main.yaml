@@ -1,1 +1,19 @@
-- include: install-bottles.yaml
+- name: "Install homebrew packages"
+  community.general.homebrew:
+    name: [
+      'watch',
+      'git',
+      'htop',
+      'neovim',
+      'ripgrep',
+      'autojump',
+      'bat',
+      'gource',
+      'docker',
+      'jq',
+      'tree',
+      'wget',
+      'tldr',
+    ]
+    state: present
+    update_homebrew: no
