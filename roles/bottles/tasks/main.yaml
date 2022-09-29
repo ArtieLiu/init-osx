@@ -15,6 +15,7 @@
       'tree',
       'wget',
       'tldr',
+      'exa',
     ]
     state: present
     update_homebrew: no

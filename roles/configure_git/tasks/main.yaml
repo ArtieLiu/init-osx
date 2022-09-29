@@ -6,3 +6,16 @@
 
 - name: enable .gitignore_global
   command: git config --global core.excludesfile ~/.gitignore_global
+
+- name: install git-delta for colorful diff
+  community.general.homebrew:
+    name: [
+      'git-delta'
+    ]
+    state: present
+    update_homebrew: no
+
+- name: configure git-delta
+  script: config_gitconfig.py
+  args:
+    executable: python3
