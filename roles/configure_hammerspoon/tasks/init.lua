@@ -12,6 +12,11 @@ hs.hotkey.bind(HYPER_LITE, "m", launch("Music"))
 hs.hotkey.bind(HYPER_LITE, "o", launch("Google Chrome"))
 hs.hotkey.bind(HYPER_LITE, "s", launch("Sicp"))
 hs.hotkey.bind(HYPER_LITE, "w", launch("wechat"))
+hs.hotkey.bind(
+        HYPER_LITE, "y",
+        function()
+            hs.execute("open -b com.apple.systempreferences /System/Library/PreferencePanes/Displays.prefPane")
+        end)
 --  HYPER, "p", open("Snipaste")
 
 HYPER ={ "cmd", "alt", "ctrl", "shift"}
