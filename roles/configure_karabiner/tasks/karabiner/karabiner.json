@@ -19,7 +19,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change caps_lock to command+control+option+shift.",
+                                "description": "Caps_lock to Hyper-lite/Escape",
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {
@@ -35,6 +35,12 @@
                                             "left_control",
                                             "left_option"
                                         ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape",
+                                        "lazy": true
                                     }
                                 ],
                                 "type": "basic"
