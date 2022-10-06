@@ -20,6 +20,7 @@ hs.hotkey.bind(
 --  HYPER, "p", open("Snipaste")
 
 HYPER ={ "cmd", "alt", "ctrl", "shift"}
+hs.hotkey.bind(HYPER, "f", launch("Finder"))
 
 remap(HYPER, 'h', pressFn('left'))
 remap(HYPER, 'j', pressFn('down'))

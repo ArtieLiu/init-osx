@@ -30,7 +30,7 @@ function open(name)
 end
 --------------------------------------
 
------------- launch app if not running, else kill it ----------------
+------------ launch app if not running, otherwise kill it ----------------
 function togglelaunch(name)
     return function()
         app_instance = hs.application.get(name)
