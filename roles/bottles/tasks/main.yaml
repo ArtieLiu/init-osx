@@ -5,7 +5,6 @@
       'watch',
       'git',
       'htop',
-      'neovim',
       'ripgrep',
       'autojump',
       'bat',
