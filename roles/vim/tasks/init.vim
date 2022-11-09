@@ -8,6 +8,8 @@ let g:maplocalleader="'"
 nnoremap F :vertical wincmd f<CR>
 nnoremap X :exit<CR>
 nnoremap <leader>w :set wrap!<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 " Go to tab by number
 noremap <leader>1 1gt
@@ -55,7 +57,6 @@ Plug 'honza/vim-snippets'
 
 " Git
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
 
 " colorful parenthesis
 Plug 'luochen1990/rainbow'
@@ -122,7 +123,6 @@ inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 " source: https://github.com/preservim/nerdtree#how-can-i-map-a-specific-key-or-shortcut-to-open-nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-1> :NERDTreeToggle<CR>
-nnoremap <C-l> :NERDTreeFind<CR>
 " display bookmarks on startup, 
 " source: https://stackoverflow.com/questions/4819079/vim-nerdtree-open-bookmarks-when-vim-is-started
 let NERDTreeShowBookmarks=1
