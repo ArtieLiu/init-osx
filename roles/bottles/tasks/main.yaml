@@ -17,8 +17,9 @@
       'exa',
       'ffmpeg',
       'node',
-      'youtube-dl'
-      'yt-dlp'
+      'youtube-dl',
+      'yt-dlp',
+      'jenv',
     ]
     state: present
     update_homebrew: no
