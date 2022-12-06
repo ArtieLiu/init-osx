@@ -11,12 +11,13 @@ nnoremap <leader>ev :e ~/.ideavimrc<CR>
 " map <leader>t :action GotoTest<CR>
 "nnoremap <leader>r <Action>(ReformatCode)
 
-nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>b :action ToggleLineBreakpoint<CR>
-nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
-nnoremap <leader>x :action HideAllWindows<CR>
-nnoremap <leader>t :action ActivateTerminalToolWindow<CR> "open terminal
 nnoremap <leader>d :action ShowBlankDiffWindow<CR>
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR> "open terminal
+nnoremap <leader>x :action HideAllWindows<CR>
+nnoremap <leader>l :action SelectInProjectView<CR>
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 
 " ========= TABs ============"
 map <leader>w :action NextSplitter<CR>

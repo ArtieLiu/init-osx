@@ -4,6 +4,26 @@ let g:mapleader=","
 let g:maplocalleader="'"
 " -----------------------
 
+" use ; as escape key
+inoremap ; <esc>
+
+" allow mouse
+set mouse=a
+
+" use system clipboard
+set clipboard+=unnamedplus
+
+"https://github.com/Olical/conjure/blob/master/doc/conjure.txt#L88
+set splitright
+
+" turnoff highlight by pressing enter
+nnoremap <return> :noh<return><esc>
+
+" make it easier to edit vimrc and source it
+" https://learnvimscriptthehardway.stevelosh.com/chapters/07.html
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 " window
 nnoremap F :vertical wincmd f<CR>
 nnoremap X :exit<CR>
@@ -62,26 +82,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'luochen1990/rainbow'
 
 call plug#end()
-
-" use ; as escape key
-inoremap ; <esc>
-
-" allow mouse
-set mouse=a
-
-" use system clipboard
-set clipboard+=unnamedplus
-
-"https://github.com/Olical/conjure/blob/master/doc/conjure.txt#L88
-set splitright
-
-" turnoff highlight by pressing enter
-nnoremap <return> :noh<return><esc>
-
-" make it easier to edit vimrc and source it
-" https://learnvimscriptthehardway.stevelosh.com/chapters/07.html
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " ------------- conjure mappings -------------
 let g:conjure#mapping#eval_file = 'ef'
