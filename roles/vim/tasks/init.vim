@@ -24,6 +24,8 @@ nnoremap <return> :noh<return><esc>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+nnoremap <C-b> <C-w>f
+
 " window
 nnoremap F :vertical wincmd f<CR>
 nnoremap X :exit<CR>
@@ -180,3 +182,7 @@ let g:rainbow_conf = {
 " https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
 autocmd FileType scheme set nocursorline
 autocmd FileType scheme nnoremap // :NERDTreeToggle<Enter>
+
+" open files in vertial splits by default 	
+" https://vi.stackexchange.com/a/22780
+autocmd WinNew * wincmd L
