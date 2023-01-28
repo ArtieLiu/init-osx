@@ -1,0 +1,11 @@
+- name: "Install Sinpaste"
+  community.general.homebrew_cask:
+    name: 'snipaste'
+
+- name: link snipaste
+  file:
+    src: "~/Projects/init-osx/roles/snipaste/tasks/config.ini"
+    path: "~/.snipaste/config.ini"
+    state: link
+    force: true
+

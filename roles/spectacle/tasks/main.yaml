@@ -1,0 +1,11 @@
+- name: "Install Spectacle"
+  community.general.homebrew_cask:
+    name: 'spectacle'
+
+- name: link Spectacle
+  file:
+    src: "~/Projects/init-osx/roles/spectacle/tasks/Shortcuts.json"
+    path: "~/Library/Application Support/Spectacle/Shortcuts.json"
+    state: link
+    force: true
+

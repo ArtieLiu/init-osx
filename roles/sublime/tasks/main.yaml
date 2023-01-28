@@ -1,0 +1,11 @@
+- name: "Install Sublime Text"
+  community.general.homebrew_cask:
+    name: 'sublime-text'
+
+- name: link sublime-text
+  file:
+    src: "~/Projects/init-osx/roles/sublime/tasks/Preferences.sublime-settings"
+    path: "~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
+    state: link
+    force: true
+
