@@ -5,12 +5,12 @@
 
 - name: Copy init.lua
   file:
-    src: "~/Projects/init-osx/roles/configure_hammerspoon/tasks/init.lua"
+    src: "~/Projects/init-osx/roles/hammerspoon/tasks/init.lua"
     path: "~/.hammerspoon/init.lua"
     state: link
 
 - name: Copy utils.lua
   file:
-    src: "~/Projects/init-osx/roles/configure_hammerspoon/tasks/utils.lua"
+    src: "~/Projects/init-osx/roles/hammerspoon/tasks/utils.lua"
     path: "~/.hammerspoon/utils.lua"
     state: link

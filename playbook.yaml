@@ -1,12 +1,12 @@
 # https://www.talkingquickly.co.uk/2021/01/macos-setup-with-ansible/
 - hosts: localhost
   roles:
-    - prepare
-    - bottles
-    - casks
+#    - prepare
+#    - bottles
+#    - casks
     - vim
-    - configure_ideavim
-    - configure_hammerspoon
-    - configure_git
-    - configure_iterm2
-    - configure_karabiner
+    - ideavim
+    - hammerspoon
+#    - git
+    - iterm2
+    - karabiner
