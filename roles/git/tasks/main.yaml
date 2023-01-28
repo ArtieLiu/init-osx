@@ -1,21 +1,8 @@
 - name: Link .gitignore_global
   ansible.builtin.file:
-    src: "~/Projects/init-osx/roles/configure_git/tasks/.gitignore_global"
+    src: "~/Projects/init-osx/roles/git/tasks/.gitignore_global"
     path: "~/.gitignore_global"
     state: link
 
 - name: enable .gitignore_global
   command: git config --global core.excludesfile ~/.gitignore_global
-
-- name: install git-delta for colorful diff
-  community.general.homebrew:
-    name: [
-      'git-delta'
-    ]
-    state: present
-    update_homebrew: no
-
-- name: configure git-delta
-  script: config_gitconfig.py
-  args:
-    executable: python3
