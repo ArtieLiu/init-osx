@@ -3,7 +3,7 @@ require ("utils")
 HYPER_LITE ={ "cmd", "alt", "ctrl"}
 
 hs.hotkey.bind(HYPER_LITE, "b", launch("obsidian"))
-hs.hotkey.bind(HYPER_LITE, "c", togglelaunch("ClashX"))
+hs.hotkey.bind(HYPER_LITE, "r", togglelaunch("ClashX"))
 hs.hotkey.bind(HYPER_LITE, "d", launch("Collins"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
 hs.hotkey.bind(HYPER_LITE, "j", launch("IntelliJ IDEA"))
@@ -34,7 +34,7 @@ remap({'ctrl', 'alt'}, 'l', pressFn('alt','right')) -- word-wise moving
 remap({'ctrl', 'alt'}, 'h', pressFn('alt','left'))
 
 ----------- reload config ------------
-hs.hotkey.bind(HYPER_LITE, "R", function()
+hs.hotkey.bind(HYPER_LITE, "c", function()
     hs.reload()
 end)
 hs.alert.show("Config loaded")
