@@ -1,12 +1,6 @@
 # Manual
-## set proxy
-```bash
-export http_proxy: http://192.168.0.108:7890
-export https_proxy: http://192.168.0.108:7890
-export all_proxy: socks5://192.168.0.108:7890
-```
 
-## install xcode
+### install xcode
 ```bash
 xcode-select --install
 ```
@@ -15,17 +9,23 @@ xcode-select --install
 sudo xcodebuild -license accept
 ```
 
-## install homebrew
+### install homebrew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-## install ansible
+
+### install ansible
 ```bash
 brew install ansible
 ```
 
-# Auto 
-## run playbook
+### clone this repo and save to `~/Projects`
+```bash
+mkdir ~/Projects
+git clone git@github.com:ArtieLiu/init-osx.git ~/Projects
+```
+
+### run playbook
 ```bash
 bash run.sh
 ```
