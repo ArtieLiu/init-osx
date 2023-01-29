@@ -2,6 +2,11 @@
   community.general.homebrew_cask:
     name: 'snipaste'
 
+- name: create snipaste config directory
+  ansible.builtin.file:
+    path: "~/.snipaste"
+    state: directory
+
 - name: link snipaste
   file:
     src: "~/Projects/init-osx/roles/snipaste/tasks/config.ini"
