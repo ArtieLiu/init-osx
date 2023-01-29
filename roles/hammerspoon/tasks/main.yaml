@@ -1,3 +1,7 @@
+- name: "Install Hammerspoon"
+  community.general.homebrew_cask:
+    name: 'hammerspoon'
+
 - name: Make .hammerspoon folder
   file:
     path: "~/.hammerspoon"

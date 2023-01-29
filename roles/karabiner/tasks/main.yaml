@@ -1,3 +1,7 @@
+- name: "Install Karabiner"
+  community.general.homebrew_cask:
+    name: 'karabiner-elements'
+
 - name: Configuring Karabiner
   file:
     src: "~/Projects/init-osx/roles/karabiner/tasks/karabiner"
