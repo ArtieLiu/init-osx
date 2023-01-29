@@ -4,6 +4,11 @@
     state: present
     update_homebrew: no
 
+- name: create k9s config directory
+  ansible.builtin.file:
+    path: "~/Library/Preferences/k9s"
+    state: directory
+
 - name: link k9s
   file:
     src: "~/Projects/init-osx/roles/k9s/tasks/views.yaml"
