@@ -1,3 +1,6 @@
+# configure zsh as default shell
+see: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+
 # oh-my-zsh
 see: https://ohmyz.sh/
 

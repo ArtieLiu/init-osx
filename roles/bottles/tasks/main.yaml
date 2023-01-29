@@ -1,7 +1,6 @@
 - name: "Install homebrew packages"
   community.general.homebrew:
     name: [
-      'zsh',
       'watch',
       'git',
       'htop',

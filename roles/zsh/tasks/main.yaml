@@ -1,1 +1,5 @@
-# needs to be done manually
+- name: "Install zsh"
+  community.general.homebrew:
+    name: 'zsh'
+    state: present
+    update_homebrew: no
