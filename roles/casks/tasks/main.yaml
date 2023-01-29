@@ -3,7 +3,6 @@
     name: "{{ item }}"
   ignore_errors: yes
   with_items:
-    - google-chrome
     - clashx
     - wechat
     - skype

@@ -1,0 +1,110 @@
+{
+  "settingsVersion": "1.67.4",
+  "exclusionRules": [
+    {
+      "pattern": "https?://mail.google.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https://vim-adventures.com/",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.openvim.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8890/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8890/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8888/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8889/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://facetest.psy.unsw.edu.au/*",
+      "passKeys": "YN"
+    },
+    {
+      "pattern": "https?://www.sshs.xyz/*",
+      "passKeys": "ba"
+    },
+    {
+      "pattern": "https?://www.sshs.xyz/*",
+      "passKeys": "BA"
+    },
+    {
+      "pattern": "https?://www.sshs.xyz/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https://www.tldraw.com/",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://www.collinsdictionary.com/*",
+      "passKeys": "5"
+    },
+    {
+      "pattern": "https?://www.collinsdictionary.com/*",
+      "passKeys": "6"
+    },
+    {
+      "pattern": "https?://www.collinsdictionary.com/*",
+      "passKeys": "7"
+    },
+    {
+      "pattern": "https?://ciechanow.ski/*",
+      "passKeys": "wer"
+    },
+    {
+      "pattern": "https?://textik.com/*",
+      "passKeys": "r"
+    },
+    {
+      "pattern": "https?://asciiflow.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://learngitbranching.js.org/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://top.zhan.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://beta.tldraw.com/*",
+      "passKeys": ""
+    },
+    {
+      "pattern": "https?://app.tryeraser.com/*",
+      "passKeys": ""
+    }
+  ],
+  "filterLinkHints": false,
+  "waitForEnterForFilteredHints": true,
+  "hideHud": false,
+  "keyMappings": "# Insert your preferred key mappings here.\nmap h previousTab\nmap l nextTab\nmap d removeTab\nmap ' Marks.activateGotoMode\nmap F LinkHints.activateModeWithQueue\nmap s Vomnibar.activateTabSelection",
+  "linkHintCharacters": "qwertasdfgvb",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
+  "regexFindMode": true,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 200,
+  "smoothScroll": true,
+  "grabBackFocus": true,
+  "searchEngines": "w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\n\n# More examples.\n#\n# (Vimium supports search completion Wikipedia, as\n# above, and for these.)\n#\n# g: https://www.google.com/search?q=%s Google\n# l: https://www.google.com/search?q=%s&btnI I'm feeling lucky...\ny: https://www.youtube.com/results?search_query=%s Youtube\n# gm: https://www.google.com/maps?q=%s Google maps\n# b: https://www.bing.com/search?q=%s Bing\n# d: https://duckduckgo.com/?q=%s DuckDuckGo\n# az: https://www.amazon.com/s/?field-keywords=%s Amazon\n# qw: https://www.qwant.com/?q=%s Qwant\nc: https://www.collinsdictionary.com/dictionary/english/%s Collins",
+  "searchUrl": "https://www.google.com/search?q=",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\nbackground: lightorange;\n}\n\ndiv > .vimiumHintMarker span {\ncolor: black;\nfont-weight: bold;\nfont-size: 12px;\nfont-family: Georgia;\n}\n\ndiv > .vimiumHintMarker > .matchingCharacter {\n}"
+}
