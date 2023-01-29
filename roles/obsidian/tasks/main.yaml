@@ -1,0 +1,15 @@
+- name: "Install obsidian"
+  community.general.homebrew_cask:
+    name: 'obsidian'
+
+- name: create obsidian knowledge directory
+  ansible.builtin.file:
+    path: "~/Documents/Knowledges"
+    state: directory
+
+- name: link obsidian vim config
+  file:
+    src: "~/Projects/init-osx/roles/obsidian/tasks/.obsidian.vimrc"
+    path: "~/Documents/Knowledges/.obsidian.vimrc"
+    state: link
+    force: true
