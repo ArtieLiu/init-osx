@@ -1,0 +1,13 @@
+- name: "Install k9s"
+  community.general.homebrew:
+    name: 'k9s'
+    state: present
+    update_homebrew: no
+
+- name: link k9s
+  file:
+    src: "~/Projects/init-osx/roles/k9s/tasks/views.yaml"
+    path: "~/Library/Preferences/k9s/views.yaml"
+    state: link
+    force: true
+
