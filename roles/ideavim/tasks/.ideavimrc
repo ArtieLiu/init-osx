@@ -3,17 +3,18 @@
 
 let mapleader="'"
 inoremap ; <esc>
-set clipboard+=unnamedplus "use system clipboard
+set clipboard+=unnamedplus
 nnoremap <leader>ev :e ~/.ideavimrc<CR>
 
 nnoremap <leader>F :action ActivateFindToolWindow<CR>
-nnoremap <leader>b :action Annotate<CR> "git blame
+nnoremap <leader>b :action Annotate<CR>
 nnoremap <leader>l :action SelectInProjectView<CR>
 nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>r :action RenameElement<CR>
-nnoremap <leader>t :action ActivateTerminalToolWindow<CR> "open terminal
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>x :action HideAllWindows<CR>
-nnoremap <leader>z :action ToggleDistractionFreeMode<CR> "zen mode
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
