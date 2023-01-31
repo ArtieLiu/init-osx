@@ -7,14 +7,16 @@
     path: "~/.hammerspoon"
     state: directory
 
-- name: Copy init.lua
+- name: link init.lua
   file:
     src: "~/Projects/init-osx/roles/hammerspoon/tasks/init.lua"
     path: "~/.hammerspoon/init.lua"
     state: link
+    force: true
 
-- name: Copy utils.lua
+- name: link utils.lua
   file:
     src: "~/Projects/init-osx/roles/hammerspoon/tasks/utils.lua"
     path: "~/.hammerspoon/utils.lua"
     state: link
+    force: true

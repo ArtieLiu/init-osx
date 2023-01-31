@@ -1,6 +1,8 @@
 - name: "Install Sublime Text"
   community.general.homebrew_cask:
     name: 'sublime-text'
+    state: present
+    update_homebrew: no
 
 - name: link sublime-text
   file:

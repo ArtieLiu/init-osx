@@ -7,3 +7,4 @@
     src: "~/Projects/init-osx/roles/karabiner/tasks/karabiner"
     path: "~/.config/karabiner"
     state: link
+    force: true

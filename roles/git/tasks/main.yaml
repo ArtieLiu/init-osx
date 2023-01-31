@@ -3,6 +3,7 @@
     src: "~/Projects/init-osx/roles/git/tasks/.gitignore_global"
     path: "~/.gitignore_global"
     state: link
+    force: true
 
 - name: enable .gitignore_global
   command: git config --global core.excludesfile ~/.gitignore_global
