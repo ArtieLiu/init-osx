@@ -15,6 +15,7 @@ nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 nnoremap <leader>df :action ShowBlankDiffWindow<CR>
+nnoremap <leader>ir :action RunClass<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
