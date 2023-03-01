@@ -4,6 +4,7 @@
 let mapleader="'"
 inoremap ; <esc>
 set clipboard+=unnamedplus
+set hls
 nnoremap <leader>ev :e ~/.ideavimrc<CR>
 
 nnoremap <leader>F :action ActivateFindToolWindow<CR>
