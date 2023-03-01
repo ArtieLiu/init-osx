@@ -1,1 +1,1 @@
-ansible-playbook playbook.yaml --tags "work"
+ansible-playbook playbook.yaml --skip-tags "life"

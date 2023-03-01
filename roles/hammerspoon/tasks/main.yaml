@@ -7,12 +7,28 @@
     path: "~/.hammerspoon"
     state: directory
 
+- name: link utils.lua
+  file:
+    src: "~/Projects/init-osx/roles/hammerspoon/tasks/utils.lua"
+    path: "~/.hammerspoon/utils.lua"
+    state: link
+    force: true
+
+- name: link basic_map.lua
+  file:
+    src: "~/Projects/init-osx/roles/hammerspoon/tasks/basic_map.lua"
+    path: "~/.hammerspoon/basic_map.lua"
+    state: link
+    force: true
+
 - name: link init.lua
   file:
     src: "~/Projects/init-osx/roles/hammerspoon/tasks/init.lua"
     path: "~/.hammerspoon/init.lua"
     state: link
     force: true
+  tags:
+    - life
 
 - name: link init.lua for office
   file:
@@ -23,9 +39,3 @@
   tags:
     - work
 
-- name: link utils.lua
-  file:
-    src: "~/Projects/init-osx/roles/hammerspoon/tasks/utils.lua"
-    path: "~/.hammerspoon/utils.lua"
-    state: link
-    force: true
