@@ -63,12 +63,7 @@ set multiple-cursors
 " nnoremap g; :action JumpToLastChange<Enter>
 " nnoremap g, :action JumpToNextChange<Enter>
 
-" Press `f` to activate AceJump
-" map f :action AceAction<CR>
-map f :action AceAction<CR>
-" Press `F` to activate Target Mode
-" map F :action AceTargetAction<CR>
-" Press `g` to activate Line Mode
-" map , :action AceLineAction<CR>
+" AceJump
+map / :action AceAction<CR>
 
 nnoremap <return> :noh<return><esc>
