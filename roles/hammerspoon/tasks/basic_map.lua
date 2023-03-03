@@ -13,13 +13,13 @@ hs.hotkey.bind(HYPER, "b",
                    hs.execute("open -b com.apple.systempreferences /System/Library/PreferencePanes/Bluetooth.prefPane")
                end)
 
-remap(HYPER, 'h', pressFn('left'))
-remap(HYPER, 'j', pressFn('down'))
-remap(HYPER, 'k', pressFn('up'))
-remap(HYPER, 'l', pressFn('right'))
+remap(HYPER_LITE, 'h', pressFn('left'))
+remap(HYPER_LITE, 'j', pressFn('down'))
+remap(HYPER_LITE, 'k', pressFn('up'))
+remap(HYPER_LITE, 'l', pressFn('right'))
 
 ----------- reload config ------------
-hs.hotkey.bind(HYPER_LITE, "c",
+hs.hotkey.bind(HYPER, "r",
                function()
                    hs.reload()
                end)
