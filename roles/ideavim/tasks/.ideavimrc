@@ -64,6 +64,6 @@ set multiple-cursors
 " nnoremap g, :action JumpToNextChange<Enter>
 
 " AceJump
-map / :action AceAction<CR>
+nnoremap / :action AceAction<CR>
 
 nnoremap <return> :noh<return><esc>
