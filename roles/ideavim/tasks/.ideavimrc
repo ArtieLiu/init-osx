@@ -1,5 +1,5 @@
 " from: https://towardsdatascience.com/the-essential-ideavim-remaps-291d4cd3971b
-" use :actionlist to see all the actions"
+" see ./actionlist for all the actions, or use ideavim command: `actionlist`"
 
 let mapleader="'"
 inoremap ; <esc>
@@ -17,7 +17,7 @@ nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 nnoremap <leader>ir :action RunClass<CR>
-nnoremap <leader>id :action Debug<CR>
+nnoremap <leader>id :action DebugClass<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
