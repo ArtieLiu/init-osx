@@ -1,7 +1,7 @@
 require("basic_map")
 
 hs.hotkey.bind(HYPER_LITE, "b", launch("obsidian"))
-hs.hotkey.bind(HYPER_LITE, "c", openURL("https://poe.com/chatgpt"))
+hs.hotkey.bind(HYPER_LITE, "c", launch("chatgpt"))
 hs.hotkey.bind(HYPER_LITE, "r", togglelaunch("ClashX"))
 hs.hotkey.bind(HYPER_LITE, "d", launch("Collins"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
