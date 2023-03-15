@@ -22,6 +22,14 @@ function launch(name)
 end
 --------------------------------------
 
+------------ open url ----------------
+function openURL(url)
+  return function()
+    hs.urlevent.openURL(url)
+  end
+end
+--------------------------------------
+
 ------------ open file ----------------
 function open(name)
   return function()

@@ -1,7 +1,7 @@
 require("basic_map")
 
 hs.hotkey.bind(HYPER_LITE, "b", launch("obsidian"))
-hs.hotkey.bind(HYPER_LITE, "c", launch("chatgpt"))
+hs.hotkey.bind(HYPER_LITE, "c", openURL("https://chat.openai.com/"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
 hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
 hs.hotkey.bind(HYPER_LITE, "s", launch("slack"))
