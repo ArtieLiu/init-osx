@@ -18,10 +18,11 @@ nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 nnoremap <leader>ir :action RunClass<CR>
 nnoremap <leader>id :action DebugClass<CR>
+nnoremap <leader>sw :action EditorToggleUseSoftWraps<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
-map <leader>s :action MoveTabRight<CR>
+" map <leader>s :action MoveTabRight<CR>
 map <leader>u :action MoveEditorToOppositeTabGroup<CR>
 
 " move to previous or next method
