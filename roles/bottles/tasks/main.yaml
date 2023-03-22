@@ -9,12 +9,10 @@
       'bat',
       'gource',
       'docker',
-      'jq',
       'tree',
       'wget',
       'tldr',
       'exa',
-      'node',
       'jenv',
     ]
     state: present

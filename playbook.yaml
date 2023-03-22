@@ -2,14 +2,14 @@
 - hosts: localhost
   roles:
     - spectacle
+    - karabiner
+    - hammerspoon
     - iterm2
     - bottles
     - casks
     - vim
     - ideavim
-    - hammerspoon
     - git
-    - karabiner
     - sublime
     - snipaste
 #    - chrome # manully
