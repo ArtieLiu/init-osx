@@ -8,14 +8,6 @@
   shell: >
     curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-- name: "Configure pip"
-  shell: >
-    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-
-- name: "Install pynvim"
-  shell: >
-    python3 -m pip install --user --upgrade pynvim
-
 - name: "Make .config/nvim folder"
   file:
     path: "~/.config/nvim"
