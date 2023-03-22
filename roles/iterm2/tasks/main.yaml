@@ -41,3 +41,6 @@
     name: 'zsh'
     state: present
     update_homebrew: no
+
+- name: "Install ohmyzsh"
+  command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
