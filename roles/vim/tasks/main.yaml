@@ -4,20 +4,24 @@
     state: present
     update_homebrew: no
 
-- name: "Installing vim plug"
+- name: "Install vim plug"
   shell: >
     curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-- name: "Installing pynvim"
+- name: "Configure pip"
+  shell: >
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+- name: "Install pynvim"
   shell: >
     python3 -m pip install --user --upgrade pynvim
 
-- name: "Making .config/nvim folder"
+- name: "Make .config/nvim folder"
   file:
     path: "~/.config/nvim"
     state: directory
 
-- name: "linking init.vim"
+- name: "Link init.vim"
   file:
     src: "~/Projects/init-osx/roles/vim/tasks/init.vim"
     path: "~/.config/nvim/init.vim"
