@@ -1,19 +1,29 @@
 # User Manual
 This is a simple project for automatic macOS devices setup. It installs applications from homebrew and also configs some of them to suit my needs.
 
-### Install xcode
-```bash
-xcode-select --Install
-```
+[//]: # (### Install xcode)
 
-```bash
-sudo xcodebuild -license accept
-```
+[//]: # (```bash)
+
+[//]: # (xcode-select --Install)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (```bash)
+
+[//]: # (sudo xcodebuild -license accept)
+
+[//]: # (```)
+
+[//]: # ()
 
 ### Install homebrew
+#### Command
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/Install/HEAD/Install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+**Note:** Remember to add Homebrew to PATH
 
 ### Install ansible
 ```bash

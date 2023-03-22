@@ -14,17 +14,8 @@
       'wget',
       'tldr',
       'exa',
-      'ffmpeg',
       'node',
-      'youtube-dl',
-      'yt-dlp',
       'jenv',
     ]
     state: present
     update_homebrew: no
-
-- name: nvm
-  shell: >
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-  args:
-    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
