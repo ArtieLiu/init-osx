@@ -3,4 +3,3 @@
     name: 'google-chrome'
     state: present
     update_homebrew: no
-  ignore_errors: yes
