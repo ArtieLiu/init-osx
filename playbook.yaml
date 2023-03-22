@@ -9,10 +9,9 @@
     - hammerspoon
     - iterm2
 #   - zsh # manually
-    - bottles
     - casks
     - vim
-    - ideavim
+    - intellij-idea
     - git
     - snipaste
     - k9s
