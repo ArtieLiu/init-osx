@@ -2,7 +2,12 @@
   community.general.homebrew_cask:
     name: 'spectacle'
 
-- name: link Spectacle
+- name: "Create directory for Spectacle configs"
+  file:
+    path: "~/Library/Application Support/Spectacle/Shortcuts.json"
+    state: directory
+
+- name: "link Spectacle config"
   file:
     src: "~/Projects/init-osx/roles/spectacle/tasks/Shortcuts.json"
     path: "~/Library/Application Support/Spectacle/Shortcuts.json"
