@@ -1,3 +1,7 @@
+- name: "Install Spectacle"
+  community.general.homebrew_cask:
+    name: 'iterm2'
+
 - name: Copy iterm2.plist
   file:
     src: "~/Projects/init-osx/roles/iterm2/tasks/com.googlecode.iterm2.plist"
