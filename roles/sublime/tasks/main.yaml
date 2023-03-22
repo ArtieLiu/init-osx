@@ -16,3 +16,5 @@
     state: link
     force: true
 
+- name: "enable key repeat for sublime"
+  command: defaults write com.sublimetext.4 ApplePressAndHoldEnabled -bool false
