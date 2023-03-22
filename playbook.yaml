@@ -2,6 +2,7 @@
 - hosts: localhost
   roles:
     - chrome
+    - sublime
     - spectacle
     - karabiner
     - hammerspoon
@@ -11,7 +12,6 @@
     - vim
     - ideavim
     - git
-    - sublime
     - snipaste
 #    - chrome # manully
     - k9s
