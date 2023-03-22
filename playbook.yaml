@@ -4,16 +4,16 @@
     - chrome
     - sublime
     - spectacle
+    - hyperkey
     - karabiner
     - hammerspoon
     - iterm2
+#   - zsh # manually
     - bottles
     - casks
     - vim
     - ideavim
     - git
     - snipaste
-#    - chrome # manully
     - k9s
     - obsidian
-#    - zsh # manually

@@ -1,0 +1,5 @@
+- name: "Install Hyperkey"
+  community.general.homebrew_cask:
+    name: 'hyperkey'
+    state: present
+    update_homebrew: no
