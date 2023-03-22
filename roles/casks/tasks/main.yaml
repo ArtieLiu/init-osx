@@ -3,9 +3,6 @@
     name: "{{ item }}"
   ignore_errors: yes
   with_items:
-    - clashx
-    - wechat
-    - skype
     - zoom
     - dozer
     - keepingyouawake
@@ -14,10 +11,8 @@
     - stats
     - rancher
     - topnotch
-    - gifox
     - monitorcontrol
     - raycast
-    - itsycal
     - sublime-merge
     - visual-studio-code
     - intellij-idea
