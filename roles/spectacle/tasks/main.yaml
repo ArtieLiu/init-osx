@@ -4,7 +4,7 @@
 
 - name: "Create directory for Spectacle configs"
   file:
-    path: "~/Library/Application Support/Spectacle/Shortcuts.json"
+    path: "~/Library/Application Support/Spectacle"
     state: directory
 
 - name: "link Spectacle config"
