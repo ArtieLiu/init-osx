@@ -1,1 +1,1 @@
-ansible-playbook playbook.yaml --skip-tags "life"
+ansible-playbook -v playbook.yaml --skip-tags "life"

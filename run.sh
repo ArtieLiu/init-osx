@@ -1,1 +1,1 @@
-ansible-playbook playbook.yaml --skip-tags "work"
+ansible-playbook -v playbook.yaml --skip-tags "work"
