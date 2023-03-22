@@ -4,6 +4,11 @@
     state: present
     update_homebrew: no
 
+- name: "Create directory for Sublime configs"
+  file:
+    path: "~/Library/Application Support/Sublime Text/Packages/User"
+    state: directory
+
 - name: link sublime-text
   file:
     src: "~/Projects/init-osx/roles/sublime/tasks/Preferences.sublime-settings"
