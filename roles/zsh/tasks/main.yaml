@@ -5,10 +5,12 @@
     update_homebrew: no
 
 - name: "clone zsh-auto-suggestions"
-  command: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  shell: > 
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 - name: "clone zsh-syntax-highlighting"
-  command: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  shell: >
+      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 - name: "install autojump"
   homebrew:
@@ -23,4 +25,5 @@
     update_homebrew: no
 
 - name: "config fzf"
-  command: $(brew --prefix)/opt/fzf/install
+  shell: >
+      $(brew --prefix)/opt/fzf/install
