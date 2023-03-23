@@ -1,6 +1,6 @@
 #https://github.com/exelban/stats
 - name: "Install Stats"
-  homebrew:
+  community.general.homebrew_cask:
     name: 'stats'
     state: present
     update_homebrew: no
