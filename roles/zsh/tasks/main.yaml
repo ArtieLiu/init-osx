@@ -21,3 +21,6 @@
     name: 'fzf'
     state: present
     update_homebrew: no
+
+- name: "config fzf"
+  command: $(brew --prefix)/opt/fzf/install
