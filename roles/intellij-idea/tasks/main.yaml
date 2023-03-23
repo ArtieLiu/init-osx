@@ -2,7 +2,7 @@
   community.general.homebrew_cask:
     name: 'intellij-idea'
 
-- name: Copy ideavimrc
+- name: Link ideavimrc
   ansible.builtin.file:
     src: "~/Projects/init-osx/roles/intellij-idea/tasks/.ideavimrc"
     path: "~/.ideavimrc"
