@@ -1,6 +1,7 @@
 # https://www.talkingquickly.co.uk/2021/01/macos-setup-with-ansible/
 - hosts: localhost
   roles:
+    - stats
     - chrome
     - sublime
     - spectacle
