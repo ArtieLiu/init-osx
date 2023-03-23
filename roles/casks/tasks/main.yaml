@@ -3,7 +3,6 @@
     name: "{{ item }}"
   ignore_errors: yes
   with_items:
-    - zoom
     - dozer
     - keepingyouawake
     - mirrordisplays
@@ -11,5 +10,3 @@
     - topnotch
     - monitorcontrol
     - raycast
-    - visual-studio-code
-    - intellij-idea
