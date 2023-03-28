@@ -22,7 +22,7 @@ nnoremap <leader>sw :action EditorToggleUseSoftWraps<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
-" map <leader>s :action MoveTabRight<CR>
+map <leader>mr :action MoveTabRight<CR>
 map <leader>u :action MoveEditorToOppositeTabGroup<CR>
 
 " move to previous or next method

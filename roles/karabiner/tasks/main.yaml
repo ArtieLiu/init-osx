@@ -2,6 +2,11 @@
   community.general.homebrew_cask:
     name: 'karabiner-elements'
 
+- name: "Create directory for karabiner configs"
+  file:
+    path: "~/.config"
+    state: directory
+
 - name: Configuring Karabiner
   file:
     src: "~/Projects/init-osx/roles/karabiner/tasks/karabiner"

@@ -3,3 +3,35 @@
     name: 'zsh'
     state: present
     update_homebrew: no
+
+- name: "install oh-my-zsh"
+  shell: >
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ignore_errors: yes
+
+- name: "clone zsh-auto-suggestions"
+  shell: >
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ignore_errors: yes
+
+- name: "clone zsh-syntax-highlighting"
+  shell: >
+      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  ignore_errors: yes
+
+- name: "install autojump"
+  homebrew:
+    name: 'autojump'
+    state: present
+    update_homebrew: no
+
+- name: "install fzf"
+  homebrew:
+    name: 'fzf'
+    state: present
+    update_homebrew: no
+
+- name: "config fzf"
+  shell: >
+      $(brew --prefix)/opt/fzf/install
+  ignore_errors: yes

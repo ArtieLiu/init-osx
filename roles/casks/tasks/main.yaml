@@ -3,27 +3,21 @@
     name: "{{ item }}"
   ignore_errors: yes
   with_items:
-    - clashx
-    - wechat
-    - skype
-    - zoom
-    - slack
     - dozer
-    - microsoft-office
-    - bartender
     - keepingyouawake
     - mirrordisplays
-    - spectacle
-    - stats
-    - lunar
-    - intellij-idea
     - rancher
-    - visual-studio-code
-    - sublime-merge
-    - topnotch
-    - mysql
-    - racket
-    - gifox
     - monitorcontrol
     - raycast
-    - itsycal
+    - topnotch
+    - wechat
+    - 1password
+    - microsoft-office
+    - skype
+    - gifox
+    - lunar
+    - cd-to
+    - obsidian
+    - bartender
+    - keepingyouawake
+    - sublime-merge

@@ -1,18 +1,19 @@
 # https://www.talkingquickly.co.uk/2021/01/macos-setup-with-ansible/
 - hosts: localhost
   roles:
-    - bottles
+    - stats
+    - chrome
+    - sublime
+    - spectacle
+    - hyperkey
+    - karabiner
+    - hammerspoon
+    - iterm2
+    - zsh
     - casks
     - vim
-    - ideavim
-    - hammerspoon
+    - intellij-idea
     - git
-    - iterm2
-    - karabiner
-    - sublime
     - snipaste
-    - spectacle
-    - chrome # manully
     - k9s
     - obsidian
-    - zsh # manually

@@ -1,0 +1,13 @@
+- name: "Install Intellij-idea"
+  community.general.homebrew_cask:
+    name: 'intellij-idea'
+
+- name: "Link ideavimrc"
+  ansible.builtin.file:
+    src: "~/Projects/init-osx/roles/intellij-idea/tasks/.ideavimrc"
+    path: "~/.ideavimrc"
+    state: link
+
+- name: "Enable ideavim key repeat"
+  shell: >
+    defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
