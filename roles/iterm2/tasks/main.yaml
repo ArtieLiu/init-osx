@@ -35,13 +35,3 @@
     ]
     state: present
     update_homebrew: no
-
-- name: "Install zsh"
-  community.general.homebrew:
-    name: 'zsh'
-    state: present
-    update_homebrew: no
-
-# ohmyzsh
-
-# powerlevel 10k

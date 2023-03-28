@@ -4,8 +4,13 @@
     state: present
     update_homebrew: no
 
+- name: "install oh-my-zsh"
+  shell: >
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ignore_errors: yes
+
 - name: "clone zsh-auto-suggestions"
-  shell: > 
+  shell: >
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   ignore_errors: yes
 

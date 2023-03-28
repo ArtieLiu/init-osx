@@ -1,14 +1,5 @@
-# configure zsh as default shell
-see: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
-
-# oh-my-zsh
-see: https://ohmyz.sh/
-
-# theme 
-see: https://github.com/romkatv/powerlevel10k
-
 # plugins
-```.zshrc
+```zsh plugins
 plugins=(
     git
     fzf
@@ -33,13 +24,3 @@ alias vim='nvim'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 ```
-
-# proxies
-```zsh
-export https_proxy=http://127.0.0.1:7890  
-export http_proxy=http://127.0.0.1:7890
-export all_proxy=socks5://127.0.0.1:7890
-```
-
-# zsh-history
-put to `~/.zsh_history`

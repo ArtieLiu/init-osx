@@ -9,7 +9,7 @@
     - karabiner
     - hammerspoon
     - iterm2
-#   - zsh # manually
+    - zsh
     - casks
     - vim
     - intellij-idea
