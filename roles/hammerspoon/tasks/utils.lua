@@ -1,40 +1,38 @@
+require("os")
+
+hs.alert.defaultStyle.strokeColor = {alpha=0}
+hs.alert.defaultStyle.strokeWidth = 0
+
 ----------- remap keys ------------
 function remap(mods, key, pressFn)
-	hs.hotkey.bind(mods, key, pressFn, nil, pressFn)
+    hs.hotkey.bind(mods, key, pressFn, nil, pressFn)
 end
 
 function pressFn(mods, key)
-	if key == nil then
-		key = mods
-		mods = {}
-	end
+    if key == nil then
+        key = mods
+        mods = {}
+    end
 
-	return function() hs.eventtap.keyStroke(mods, key, 1000) end
-end
---------------------------------------
-
------------- open app ----------------
--- from: https://liuhao.im/english/2017/06/02/macos-automation-and-shortcuts-with-hammerspoon.html
-function launch(name)
-  return function()
-      hs.application.launchOrFocus(name)
-  end
+    return function()
+        hs.eventtap.keyStroke(mods, key, 1000)
+    end
 end
 --------------------------------------
 
 ------------ open url ----------------
 function openURL(url)
-  return function()
-    hs.urlevent.openURL(url)
-  end
+    return function()
+        hs.urlevent.openURL(url)
+    end
 end
 --------------------------------------
 
 ------------ open file ----------------
 function open(name)
-  return function()
-      hs.open(name)
-  end
+    return function()
+        hs.open(name)
+    end
 end
 --------------------------------------
 

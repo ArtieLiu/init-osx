@@ -1,4 +1,6 @@
 require("utils")
+require("smart_launch")
+
 
 HYPER_LITE = { "cmd", "alt", "ctrl" }
 HYPER      = { "cmd", "alt", "ctrl", "shift" }
@@ -23,5 +25,5 @@ hs.hotkey.bind(HYPER, "r",
                function()
                    hs.reload()
                end)
-hs.alert.show("Config loaded")
+hs.alert.show("reloaded")
 --------------------------------------
