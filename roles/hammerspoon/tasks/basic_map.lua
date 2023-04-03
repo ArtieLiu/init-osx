@@ -25,5 +25,5 @@ hs.hotkey.bind(HYPER, "r",
                function()
                    hs.reload()
                end)
-hs.alert.show("reloaded")
+hs.alert.show("reloaded", 0.5)
 --------------------------------------
