@@ -31,8 +31,10 @@ function is_time_to_rest()
 end
 
 function show_message_to_rest()
-    hs.alert.show("take a break", {
-        fadeOutDuration = BREAK_DURATION
+    hs.sound.getByName("Glass"):play()
+    hs.alert.show("Break", {
+        fillColor = { red = 181/255, green = 100/255, blue = 100/255, alpha=1},
+        fadeOutDuration = BREAK_DURATION,
     })
 end
 
