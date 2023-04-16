@@ -5,7 +5,7 @@ require("smart_launch")
 HYPER_LITE = { "cmd", "alt", "ctrl" }
 HYPER      = { "cmd", "alt", "ctrl", "shift" }
 
-hs.hotkey.bind(HYPER, "f", launch("Finder"))
+hs.hotkey.bind(HYPER_LITE, "f", launch("Finder"))
 hs.hotkey.bind(HYPER, "y",
                function()
                    hs.execute("open -b com.apple.systempreferences /System/Library/PreferencePanes/Displays.prefPane")
