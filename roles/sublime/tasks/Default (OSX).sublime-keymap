@@ -3,5 +3,5 @@
 	{ "keys": ["super+shift+a"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 	{ "keys": ["super+alt+z"], "command": "toggle_distraction_free" },
 	{ "keys": ["alt+k"], "command": "expand_selection", "args": {"to": "smart"} },
-	{ "keys": ["super+1"], "command": "focus_file_on_sidebar" },
+	{ "keys": ["super+1"], "command": "focus_file_on_sidebar" }, // need package: https://packagecontrol.io/packages/Focus%20File%20on%20Sidebar
 ]
