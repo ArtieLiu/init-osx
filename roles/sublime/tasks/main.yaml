@@ -9,10 +9,17 @@
     path: "~/Library/Application Support/Sublime Text/Packages/User"
     state: directory
 
-- name: link sublime-text
+- name: link sublime-text settings
   file:
     src: "~/Projects/init-osx/roles/sublime/tasks/Preferences.sublime-settings"
     path: "~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
+    state: link
+    force: true
+
+- name: link sublime-text keybindings
+  file:
+    src: "~/Projects/init-osx/roles/sublime/tasks/Default (OSX).sublime-keymap"
+    path: "~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap"
     state: link
     force: true
 
