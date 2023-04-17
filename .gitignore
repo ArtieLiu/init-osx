@@ -1,3 +1,4 @@
 /roles/karabiner/tasks/karabiner/automatic_backups/
 **/.DS_Store
 **/.idea
+/roles/spectacle/tasks/Shortcuts.json

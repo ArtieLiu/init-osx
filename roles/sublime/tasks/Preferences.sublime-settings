@@ -1,7 +1,8 @@
 {
 	"font_size": 17,
 	// "theme": "Material-Theme-Darker.sublime-theme",
-	"ignored_packages": [],
+	"ignored_packages": [
+	],
 	// "color_scheme": "Packages/Predawn/predawn.tmTheme",
 	"always_show_minimap_viewport" : true,
 	"bold_folder_labels"           : true,
@@ -11,4 +12,6 @@
 	"line_padding_bottom"          : 3,
 	"line_padding_top"             : 3,
 	"overlay_scroll_bars"          : "enabled",
+	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 }
