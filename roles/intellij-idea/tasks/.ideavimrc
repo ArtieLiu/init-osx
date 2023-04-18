@@ -53,12 +53,16 @@ map Q gq
 
 " https://github.com/JetBrains/ideavim/wiki/Emulated-plugins
 set ideamarks " default is true
+
+" https://github.com/dbakker/vim-paragraph-motion#vim-paragraph-motion
 set vim-paragraph-motion
+
 set surround
 
+" https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins#argtextobj
 set argtextobj
-"Plug 'vim-scripts/argtextobj.vim'
-"let g:argtextobj_pairs="(:),{:},<:>,[:]"
+let g:argtextobj_pairs="(:),{:},<:>,[:]"
+
 set multiple-cursors
 
 " source https://youtrack.jetbrains.com/issue/VIM-542
