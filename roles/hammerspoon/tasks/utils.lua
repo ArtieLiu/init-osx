@@ -2,6 +2,7 @@ require("os")
 
 hs.alert.defaultStyle.strokeColor = {alpha=0}
 hs.alert.defaultStyle.strokeWidth = 0
+hs.application.enableSpotlightForNameSearches(true)
 
 ----------- remap keys ------------
 function remap(mods, key, pressFn)
