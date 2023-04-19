@@ -1,6 +1,9 @@
 " from: https://towardsdatascience.com/the-essential-ideavim-remaps-291d4cd3971b
 " see ./actionlist for all the actions, or use ideavim command: `actionlist`"
 
+" enable key repeat for intellij
+" defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false
+
 let mapleader="'"
 inoremap ; <esc>
 set clipboard+=unnamedplus
