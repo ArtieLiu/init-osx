@@ -9,6 +9,13 @@
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ignore_errors: yes
 
+# https://github.com/romkatv/powerlevel10k#manual
+- name: "clone powerlevel10k"
+  shell: >
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+    echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+#   run p10k configure
+
 - name: "clone zsh-auto-suggestions"
   shell: >
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
