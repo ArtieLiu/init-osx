@@ -22,7 +22,7 @@ end
 function last_break_is_one_session_ago()
     local now = os.time()
     local function is_first_session()
-        return now - LAST_BREAK_TIME > 2 * hour
+        return now - LAST_BREAK_TIME > 1 * hour
     end
 
     if is_first_session() then
