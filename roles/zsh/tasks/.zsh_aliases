@@ -1,0 +1,12 @@
+alias tree="tree -C"
+alias o="open"
+alias c='clear'
+alias ll='exa -l'
+alias cat='bat'
+alias rmlogfiles='sudo rm /private/var/log/asl/*.asl'
+alias vim='nvim'
+
+# ---------- dev ------------
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias mci='mvn clean install'

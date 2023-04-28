@@ -4,6 +4,12 @@
     state: present
     update_homebrew: no
 
+- name: "link zsh aliases"
+  file:
+    src: "~/Projects/init-osx/roles/zsh/tasks/.zsh_aliases"
+    path: "~/.zsh_aliases"
+    state: link
+
 - name: "install oh-my-zsh"
   shell: >
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -15,6 +21,7 @@
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
     echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 #   run p10k configure
+  ignore_errors: yes
 
 - name: "clone zsh-auto-suggestions"
   shell: >
