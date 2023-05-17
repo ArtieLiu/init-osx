@@ -7,9 +7,9 @@
 #    - spectacle
 #    - hyperkey
 #    - karabiner
-    - hammerspoon
+#    - hammerspoon
 #    - iterm2
-#    - zsh
+    - zsh
 #    - casks
 #    - vim
 #    - intellij-idea

@@ -5,6 +5,8 @@ alias ll='exa -l'
 alias cat='bat'
 alias rmlogfiles='sudo rm /private/var/log/asl/*.asl'
 alias vim='nvim'
+alias h='history | tail -n 10'
+alias history='history | tail -n 100'
 
 # ---------- dev ------------
 alias dps='docker ps'

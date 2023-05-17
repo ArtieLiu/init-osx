@@ -12,9 +12,9 @@ LAST_BREAK_TIME = os.time()
 
 function launch(name)
     return function()
-        if last_break_is_one_session_ago() then
-            prompt_to_rest()
-        end
+--         if is_time_to_rest() then
+--             prompt_to_rest()
+--         end
         hs.application.launchOrFocus(name)
     end
 end
