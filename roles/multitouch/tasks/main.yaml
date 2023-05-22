@@ -1,0 +1,10 @@
+#- name: "Install multitouch"
+#  community.general.homebrew_cask:
+#    name: 'multitouch'
+
+- name: 'link conifg'
+  file:
+    src: "~/Projects/init-osx/roles/multitouch/tasks/com.brassmonkery.Multitouch.plist"
+    path: "~/Library/Preferences/com.brassmonkery.Multitouch.plist"
+    state: link
+    force: true
