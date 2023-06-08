@@ -1,4 +1,5 @@
 # $XDG_CONFIG_HOME/k9s/views.yml
+# use `k9s info` to see where the configurations are saved
 k9s:
   views:
     # Alters the pod view column layout. Uses GVR as key
