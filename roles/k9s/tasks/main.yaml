@@ -5,12 +5,12 @@
     update_homebrew: no
 
 # use `k9s info` to see where the configurations are saved
-# and link views.yaml
+# and link views.yml
 
 #- name: link k9s
 #  file:
-#    src: "~/Projects/init-osx/roles/k9s/tasks/views.yaml"
-#    path: "~/Library/Preferences/k9s/views.yaml"
+#    src: "~/Projects/init-osx/roles/k9s/tasks/views.yml"
+#    path: "~/Library/Preferences/k9s/views.yml"
 #    state: link
 #    force: true
 
