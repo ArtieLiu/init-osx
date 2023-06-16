@@ -12,7 +12,7 @@ nnoremap <leader>ev :e ~/.ideavimrc<CR>
 
 nnoremap <leader>F :action ActivateFindToolWindow<CR>
 nnoremap <leader>b :action Annotate<CR>
-nnoremap <leader>l :action SelectInProjectView<CR>
+nnoremap <leader>s :action SelectInProjectView<CR>
 nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
