@@ -7,13 +7,12 @@ HYPER      = { "cmd", "alt", "ctrl", "shift" }
 
 hs.hotkey.bind(HYPER_LITE, ",", launch("System Settings"))
 hs.hotkey.bind(HYPER_LITE, "f", launch("Finder"))
+
+-- ref: https://gist.github.com/rmcdongit/f66ff91e0dad78d4d6346a75ded4b751?permalink_comment_id=4286384
+-- ref: https://github.com/piarasj/piarasj.github.io/blob/master/ventura_settings.md#ventura-system-settings
 hs.hotkey.bind(HYPER, "y",
                function()
                    hs.execute("open -b com.apple.systempreferences /System/Library/PreferencePanes/Displays.prefPane")
-               end)
-hs.hotkey.bind(HYPER, "b",
-               function()
-                   hs.execute("open -b com.apple.systempreferences /System/Library/PreferencePanes/Bluetooth.prefPane")
                end)
 
 remap(HYPER_LITE, 'h', pressFn('left'))
