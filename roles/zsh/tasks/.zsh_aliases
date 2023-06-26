@@ -7,11 +7,15 @@ alias rmlogfiles='sudo rm /private/var/log/asl/*.asl'
 alias vim='nvim'
 alias h='history | tail -n 10'
 alias history='history | tail -n 100'
+alias zshalias='vim ~/.zsh_aliases'
+alias zshrc='vim ~/.zshrc'
 
 # ---------- dev ------------
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias mci='mvn clean install'
+
 alias gcom='gco master'
 alias stash='git stash'
 alias pop='git stash pop'
+alias drop='git stash drop'
