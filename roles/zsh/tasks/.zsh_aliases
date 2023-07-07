@@ -17,6 +17,7 @@ alias dpsa='docker ps -a'
 alias mci='mvn clean install'
 
 alias gcom='gco master'
+alias rebase='git rebase'
 alias stash='git stash'
 alias pop='git stash pop'
 alias drop='git stash drop'
