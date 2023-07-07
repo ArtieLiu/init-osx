@@ -9,6 +9,7 @@ alias h='history | tail -n 10'
 alias history='history | tail -n 100'
 alias zshalias='vim ~/.zsh_aliases'
 alias zshrc='vim ~/.zshrc'
+alias vimrc='vim ~/.config/nvim/init.vim'
 
 # ---------- dev ------------
 alias dps='docker ps'
