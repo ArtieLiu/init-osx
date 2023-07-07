@@ -20,6 +20,14 @@ remap(HYPER_LITE, 'h', pressFn('left'))
 remap(HYPER_LITE, 'j', pressFn('down'))
 remap(HYPER_LITE, 'k', pressFn('up'))
 remap(HYPER_LITE, 'l', pressFn('right'))
+remap(HYPER     , 'h', pressFn('alt', 'left'))
+remap(HYPER     , 'l', pressFn('alt', 'right'))
+
+
+hs.hotkey.bind(HYPER_LITE, "c", launch("chatgpt"))
+hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
+hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
+hs.hotkey.bind(HYPER_LITE, "o", launch("Google Chrome"))
 
 ----------- reload config ------------
 hs.hotkey.bind(HYPER, "r",
