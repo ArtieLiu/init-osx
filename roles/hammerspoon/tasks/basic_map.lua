@@ -28,6 +28,7 @@ hs.hotkey.bind(HYPER_LITE, "c", launch("chatgpt"))
 hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
 hs.hotkey.bind(HYPER_LITE, "o", launch("Google Chrome"))
+hs.hotkey.bind(HYPER_LITE, "e", launch("sublime text"))
 
 ----------- reload config ------------
 hs.hotkey.bind(HYPER, "r",
