@@ -12,7 +12,7 @@ nnoremap <leader>ev :e ~/.ideavimrc<CR>
 
 nnoremap <leader>F :action ActivateFindToolWindow<CR>
 nnoremap <leader>b :action Annotate<CR>
-nnoremap <leader>s :action SelectInProjectView<CR>
+nnoremap <leader>l :action SelectInProjectView<CR>
 nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
@@ -23,8 +23,6 @@ nnoremap <leader>ir :action RunClass<CR>
 nnoremap <leader>id :action DebugClass<CR>
 nnoremap <leader>sw :action EditorToggleUseSoftWraps<CR>
 nnoremap <leader>er :action ShowErrorDescription<CR>
-nnoremap <leader>h <C-W>h
-nnoremap <leader>l <C-W>l
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
