@@ -1,12 +1,10 @@
 require("utils")
 require("smart_launch")
 
+hs.alert.show("loaded", 1)
 
 HYPER_LITE = { "cmd", "alt", "ctrl" }
 HYPER      = { "cmd", "alt", "ctrl", "shift" }
-
-hs.hotkey.bind(HYPER_LITE, ",", launch("System Settings"))
-hs.hotkey.bind(HYPER_LITE, "f", launch("Finder"))
 
 -- ref: https://gist.github.com/rmcdongit/f66ff91e0dad78d4d6346a75ded4b751?permalink_comment_id=4286384
 -- ref: https://github.com/piarasj/piarasj.github.io/blob/master/ventura_settings.md#ventura-system-settings
@@ -22,7 +20,8 @@ remap(HYPER_LITE, 'l', pressFn('right'))
 remap(HYPER     , 'h', pressFn('alt', 'left'))
 remap(HYPER     , 'l', pressFn('alt', 'right'))
 
-
+hs.hotkey.bind(HYPER_LITE, ",", launch("System Settings"))
+hs.hotkey.bind(HYPER_LITE, "f", function() hs.execute("open ~/Downloads") end)
 hs.hotkey.bind(HYPER_LITE, "c", launch("chatgpt"))
 hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
@@ -34,5 +33,4 @@ hs.hotkey.bind(HYPER, "r",
                function()
                    hs.reload()
                end)
-hs.alert.show("reloaded", 0.5)
 --------------------------------------
