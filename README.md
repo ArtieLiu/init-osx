@@ -7,12 +7,13 @@ The features worth mentioning:
 
 **# HyperLite and Hyper key**
 
-HyperLite is defined as `ctrl + opt + cmd`.
+_HyperLite_ key is defined as `ctrl + opt + cmd`.
 
-By using Hammerspoon, hyperlite and another key when pressed together, can be mapped to a function that does various
+By using Hammerspoon, HyperLite and another key when pressed together, can be mapped to a function that does various
 things. For example, hyperlite + i can be used as a shortcut to open iTerm.
 
-On top of hyperlite, Hyper key is the combination of HyperLite and shift key.
+On top of hyperlite, _Hyper_ key is the combination of _HyperLite_ and shift key, i.e. _HYPER_ key = `ctrl + opt + cmd + shift`
+
 This adds another layer of keyboard shortcuts, so that we can define more actions.
 For instance, `Hyper + , ` can be used to open System Settings.
 
