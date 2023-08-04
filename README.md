@@ -1,47 +1,57 @@
-# User Manual
-This is a simple project for automatic macOS devices setup. It installs applications from homebrew and also configs some of them to suit my needs.
+This repo documents the way that I use Mac.
 
-[//]: # (### Install xcode)
+It installs some core applications that I use heavily, these apps serves as foundation of my hacks. 
+The configuration of these apps are stored in this repo as well, so my setup is consistent among the desktop/laptops that I use.
 
-[//]: # (```bash)
+The features worth mentioning:
 
-[//]: # (xcode-select --Install)
+**# HyperLite and Hyper key**
 
-[//]: # (```)
+HyperLite is defined as `ctrl + opt + cmd`.
 
-[//]: # ()
-[//]: # (```bash)
+By using Hammerspoon, hyperlite and another key when pressed together, can be mapped to a function that does various
+things. For example, hyperlite + i can be used as a shortcut to open iTerm.
 
-[//]: # (sudo xcodebuild -license accept)
+On top of hyperlite, Hyper key is the combination of HyperLite and shift key.
+This adds another layer of keyboard shortcuts, so that we can define more actions.
+For instance, `Hyper + , ` can be used to open System Settings.
 
-[//]: # (```)
 
-[//]: # ()
+**# Remapping of CapsLock key to HyperLite/Escape**
 
-### Install homebrew
-#### Command
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-**Note:** Remember to add Homebrew to PATH
-
-### Install ansible
-```bash
-brew Install ansible
+ ```
+    Hold CapsLock -> Hyperlite
+    Tap  CapsLock -> Esc
 ```
 
-### Clone this repo to ~/Projects
-```bash
-mkdir ~/Projects
-git clone git@github.com:ArtieLiu/init-osx.git ~/Projects
+It's cumbersome to press three keys at once, also the ergomatics hurts the fingers.
+
+Three are some applications that are able to remap CapsLock key to cmd+option+ctrl.
+
+_Karabiner-Elements_ is one of them. By using predefined rules from other user, this task is done easily.
+
+It is also possible to use the app named _hyperkey_, however some key combinations like `hyperlite +j/k/h/l` seem not
+working.
+
+**# HyperLite/Hyper key based application switching**
+
+```
+   hyperlite + o -> Chrome
+   hyperlite + i -> iterm
+   hyperlite + m -> music
+   hyperlite + ; -> raycast window
+   hyper + , -> system settings
 ```
 
-### Run playbook
-```bash
-bash run.sh
+**# System-wide vim like navigation**
+
+```
+   hyperlite + j/k/h/l -> down/up/left/right
 ```
 
-Note: In order to run the specialized version for work, run:
-```bash
-bash run-work-related.sh
+**# Window management**
+```
+   option + h -> left half screen
+   option + l -> right half screen
+   option + f -> funn screen
 ```
