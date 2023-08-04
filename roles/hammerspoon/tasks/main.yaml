@@ -34,15 +34,3 @@
     path: "~/.hammerspoon/init.lua"
     state: link
     force: true
-  tags:
-    - life
-
-- name: link init.lua for workstation
-  file:
-    src: "~/Projects/init-osx/roles/hammerspoon/tasks/init-work.lua"
-    path: "~/.hammerspoon/init.lua"
-    state: link
-    force: true
-  tags:
-    - work
-
