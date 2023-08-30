@@ -1,0 +1,5 @@
+# For app switching
+#  https://contexts.co/
+- name: "Install Contexts"
+  community.general.homebrew_cask:
+    name: 'contexts'

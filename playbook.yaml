@@ -8,7 +8,7 @@
 #    - hyperkey
 #    - karabiner
 #    - hammerspoon
-    - multitouch
+#    - multitouch
 #    - iterm2
 #    - zsh
 #    - casks
@@ -18,3 +18,4 @@
 #    - snipaste
 #    - k9s
 #    - obsidian
+    - contexts

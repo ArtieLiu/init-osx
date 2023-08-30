@@ -1,4 +1,4 @@
-- name: "Install Spectacle"
+- name: "Install Iterm2"
   community.general.homebrew_cask:
     name: 'iterm2'
 
