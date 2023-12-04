@@ -3,7 +3,7 @@ require("smart_launch")
 
 hs.alert.show("loaded", 1)
 
-HYPER_LITE = { "cmd", "alt", "ctrl" }
+HYPER_LITE = {"ctrl"}
 HYPER      = { "cmd", "alt", "ctrl", "shift" }
 
 -- ref: https://gist.github.com/rmcdongit/f66ff91e0dad78d4d6346a75ded4b751?permalink_comment_id=4286384
