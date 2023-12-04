@@ -18,7 +18,7 @@
 
 - name: link sublime-text keybindings
   file:
-    src: "~/Projects/init-osx/roles/sublime/tasks/Default (OSX).sublime-keymap"
+    src: "~/Projects/init-osx/roles/sublime/tasks/Default-OSX.sublime-keymap"
     path: "~/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap"
     state: link
     force: true

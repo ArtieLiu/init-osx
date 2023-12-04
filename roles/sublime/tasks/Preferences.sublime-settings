@@ -1,9 +1,7 @@
 {
 	"font_size": 17,
-	// "theme": "Material-Theme-Darker.sublime-theme",
 	"ignored_packages": [
 	],
-	// "color_scheme": "Packages/Predawn/predawn.tmTheme",
 	"always_show_minimap_viewport" : true,
 	"bold_folder_labels"           : true,
 	
