@@ -8,7 +8,7 @@ let mapleader="'"
 inoremap ; <esc>
 set clipboard+=unnamedplus
 set hls
-nnoremap <leader>ev :e ~/.ideavimrc<CR>
+nnoremap <leader>rc :e ~/.ideavimrc<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>b :action Annotate<CR>
@@ -18,11 +18,14 @@ nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>t :action GotoTest<CR>
 nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+nnoremap <leader>o :action GotoFile<CR>
+nnoremap <leader>f :action GotoFile<CR>
 nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 nnoremap <leader>ir :action RunClass<CR>
 nnoremap <leader>id :action DebugClass<CR>
 nnoremap <leader>sw :action EditorToggleUseSoftWraps<CR>
 nnoremap <leader>er :action ShowErrorDescription<CR>
+vnoremap <leader>ev :action EvaluateExpression<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
@@ -36,6 +39,9 @@ nnoremap ]] :action MethodDown<CR>
 " errors
 nnoremap ge :action GotoNextError<CR>
 nnoremap gE :action GotoPreviousError<CR>
+
+" changes
+nnoremap gc :action JumpToNextChange<CR>
 
 set easymotion
 
