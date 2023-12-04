@@ -4,7 +4,7 @@ require("smart_launch")
 hs.alert.show("loaded", 1)
 
 HYPER_LITE = {"ctrl"}
-HYPER      = { "cmd", "alt", "ctrl", "shift" }
+HYPER      = {"ctrl", "shift" }
 
 -- ref: https://gist.github.com/rmcdongit/f66ff91e0dad78d4d6346a75ded4b751?permalink_comment_id=4286384
 -- ref: https://github.com/piarasj/piarasj.github.io/blob/master/ventura_settings.md#ventura-system-settings
