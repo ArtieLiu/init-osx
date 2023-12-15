@@ -24,8 +24,10 @@ nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 nnoremap <leader>ir :action RunClass<CR>
 nnoremap <leader>id :action DebugClass<CR>
 nnoremap <leader>sw :action EditorToggleUseSoftWraps<CR>
+nnoremap <leader>w :action EditorToggleUseSoftWraps<CR>
 nnoremap <leader>er :action ShowErrorDescription<CR>
 vnoremap <leader>ev :action EvaluateExpression<CR>
+nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
