@@ -20,7 +20,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Caps_lock to Hyper-lite/Escape",
+                                "description": "Caps_lock to Ctrl/Escape",
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {
@@ -31,11 +31,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_command",
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_option"
-                                        ]
+                                        "key_code": "left_control"
                                     }
                                 ],
                                 "to_if_alone": [
