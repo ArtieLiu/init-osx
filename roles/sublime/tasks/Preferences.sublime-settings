@@ -12,4 +12,5 @@
 	"overlay_scroll_bars"          : "enabled",
 	"color_scheme": "Packages/Predawn/predawn.tmTheme",
 	"theme": "Material-Theme-Darker.sublime-theme",
+	"update_check": false
 }
