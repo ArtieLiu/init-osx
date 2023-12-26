@@ -12,14 +12,13 @@ nnoremap <leader>rc :e ~/.ideavimrc<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>b :action Annotate<CR>
+nnoremap <leader>f :action FindInPath<CR>
 nnoremap <leader>l :action SelectInProjectView<CR>
 nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>t :action GotoTest<CR>
 nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
-nnoremap <leader>o :action GotoFile<CR>
-nnoremap <leader>f :action GotoFile<CR>
 nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 nnoremap <leader>ir :action RunClass<CR>
 nnoremap <leader>id :action DebugClass<CR>
