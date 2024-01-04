@@ -6,5 +6,5 @@
 	{ "keys": ["super+1"], "command": "focus_file_on_sidebar" }, // need package: https://packagecontrol.io/packages/Focus%20File%20on%20Sidebar
 	{ "keys": ["alt+a"], "command": "replace_all", "args": {"close_panel": true},
 		 "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
-	},
+	}
 ]
