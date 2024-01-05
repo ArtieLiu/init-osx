@@ -38,5 +38,6 @@ alias dpsa='docker ps -a'
 alias mci='mvn clean install'
 
 # ---------- kubernetes ------------
+alias k='kuberctl'
 alias apply='kubectl apply -f'
 alias delete='kubectl delete -f'
