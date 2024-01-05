@@ -11,11 +11,8 @@ alias zshalias='vim ~/.zsh_aliases'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.config/nvim/init.vim'
 
-# ---------- dev ------------
-alias dps='docker ps'
-alias dpsa='docker ps -a'
-alias mci='mvn clean install'
-
+# ---------- git ------------
+alias cmt='git commit -m'
 alias gcom='gco master'
 alias rebase='git rebase'
 alias stash='git stash'
@@ -25,4 +22,21 @@ alias force='git push -f'
 alias pop='git stash pop'
 alias drop='git stash drop'
 
-alias cmt="/Users/yliu/Projects/raycast-scripts/scripts/git-commit"
+# ---------- maven ------------
+alias mci='mvn clean install'
+alias mcc='mvn clean compile'
+alias mcp='mvn clean package'
+alias mcis='mvn clean install -DskipTests -Djetty.skip=true -Dclm.skip=true'
+alias mcisd='mvn clean install -T7 -Dmaven.test.skip.exec=true -Djetty.skip=true -Dmaven.javadoc.skip=true -Dfindbugs.skip=true -Dfindbugs.skipEmptyReport=true -Dmdep.analyze.skip=true -Djar.skipIfEmpty=true -Dsource.skip=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dclm.skip=true'
+alias mcisq='mvn clean install -T7 -Dmaven.test.skip.exec=true -Djetty.skip=true -Dmaven.javadoc.skip=true -Dfindbugs.skip=true -Dfindbugs.skipEmptyReport=true -Dmdep.analyze.skip=true -Djar.skipIfEmpty=true -Dsource.skip=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dclm.skip=true -DskipTests=true'
+alias mcisqd='mvn clean deploy -T7 -Dmaven.test.skip.exec=true -Djetty.skip=true -Dmaven.javadoc.skip=true -Dfindbugs.skip=true -Dfindbugs.skipEmptyReport=true -Dmdep.analyze.skip=true -Djar.skipIfEmpty=true -Dsource.skip=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dclm.skip=true -DskipTests=true | tee /tmp/mcisqd.out && cat /tmp/mcisqd.out | grep "Uploaded:" | grep -v ".pom" | grep -v "maven-metadata.xml" | grep -v "tests.jar" | grep -v "test-sources.jar" | grep -E "[0-9]+-([0-9]|\.|-)*[0-9]"'
+alias format='mvn antrun:run@ktlint-format'
+
+# ---------- docker ------------
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias mci='mvn clean install'
+
+# ---------- kubernetes ------------
+alias apply='kubectl apply -f'
+alias delete='kubectl delete -f'
