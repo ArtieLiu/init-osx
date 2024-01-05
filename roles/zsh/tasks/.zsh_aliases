@@ -19,5 +19,10 @@ alias mci='mvn clean install'
 alias gcom='gco master'
 alias rebase='git rebase'
 alias stash='git stash'
+alias push='git push'
+alias force='git push -f'
+
 alias pop='git stash pop'
 alias drop='git stash drop'
+
+alias cmt="/Users/yliu/Projects/raycast-scripts/scripts/git-commit"
