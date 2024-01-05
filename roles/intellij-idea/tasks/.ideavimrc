@@ -8,10 +8,13 @@ let mapleader="'"
 inoremap ; <esc>
 set clipboard+=unnamedplus
 set hls
+
+nnoremap H :action PreviousTab<CR>
+nnoremap L :action NextTab<CR>
 nnoremap <leader>rc :e ~/.ideavimrc<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
-nnoremap <leader>b :action Annotate<CR>
+nnoremap <leader>bl :action Annotate<CR>
 nnoremap <leader>f :action FindInPath<CR>
 nnoremap <leader>l :action SelectInProjectView<CR>
 nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
