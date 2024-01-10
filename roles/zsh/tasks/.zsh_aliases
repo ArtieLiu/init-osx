@@ -21,6 +21,7 @@ alias force='git push -f'
 
 alias pop='git stash pop'
 alias drop='git stash drop'
+alias cmt='git commit -m'
 
 # ---------- maven ------------
 alias mci='mvn clean install'
@@ -35,7 +36,6 @@ alias format='mvn antrun:run@ktlint-format'
 # ---------- docker ------------
 alias dps='docker ps'
 alias dpsa='docker ps -a'
-alias mci='mvn clean install'
 
 # ---------- kubernetes ------------
 alias k='kuberctl'
