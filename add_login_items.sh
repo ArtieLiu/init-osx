@@ -1,0 +1,1 @@
+osascript add_login_items.scpt
