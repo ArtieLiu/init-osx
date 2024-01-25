@@ -37,6 +37,14 @@ function open(name)
 end
 --------------------------------------
 
+------------ launch app ----------------
+function launch(name)
+    return function()
+        hs.application.launchOrFocus(name)
+    end
+end
+--------------------------------------
+
 ------------ launch app if not running, otherwise kill it ----------------
 function togglelaunch(name)
     return function()

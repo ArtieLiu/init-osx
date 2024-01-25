@@ -1,6 +1,5 @@
 require("basic_map")
 
-hs.hotkey.bind(HYPER, "b", force_break)
 hs.hotkey.bind(HYPER_LITE, "b", launch("obsidian"))
 --hs.hotkey.bind(HYPER_LITE, "c", launch("chatgpt"))
 hs.hotkey.bind(HYPER_LITE, "d", launch("Collins"))

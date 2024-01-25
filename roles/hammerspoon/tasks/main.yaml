@@ -21,13 +21,6 @@
     state: link
     force: true
 
-- name: link smartlaunch.lua
-  file:
-    src: "~/Projects/init-osx/roles/hammerspoon/tasks/smart_launch.lua"
-    path: "~/.hammerspoon/smart_launch.lua"
-    state: link
-    force: true
-
 - name: link init.lua
   file:
     src: "~/Projects/init-osx/roles/hammerspoon/tasks/init.lua"

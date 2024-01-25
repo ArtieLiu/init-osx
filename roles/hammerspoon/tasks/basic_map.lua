@@ -1,5 +1,4 @@
 require("utils")
-require("smart_launch")
 
 hs.alert.show("loaded", 1)
 
