@@ -1,0 +1,11 @@
+{
+  "keyMappings": "# Insert your preferred key mappings here.\nmap h previousTab\nmap l nextTab\nmap d removeTab\nmap o Vomnibar.activateTabSelection\nmap y duplicateTab\n\nmap ' Marks.activateGotoMode\nmap f LinkHints.activateModeToOpenInNewForegroundTab",
+  "linkHintCharacters": "qwertasdfgvb",
+  "regexFindMode": true,
+  "scrollStepSize": 200,
+  "grabBackFocus": true,
+  "searchEngines": "w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\n\n# More examples.\n#\n# (Vimium supports search completion Wikipedia, as\n# above, and for these.)\n#\n# g: https://www.google.com/search?q=%s Google\n# l: https://www.google.com/search?q=%s&btnI I'm feeling lucky...\ny: https://www.youtube.com/results?search_query=%s Youtube\n# gm: https://www.google.com/maps?q=%s Google maps\n# b: https://www.bing.com/search?q=%s Bing\n# d: https://duckduckgo.com/?q=%s DuckDuckGo\n# az: https://www.amazon.com/s/?field-keywords=%s Amazon\n# qw: https://www.qwant.com/?q=%s Qwant\nc: https://www.collinsdictionary.com/dictionary/english/%s Collins",
+  "settingsVersion": "2.0.5",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\nbackground: lightorange;\n}\n\ndiv > .vimiumHintMarker span {\ncolor: black;\nfont-weight: bold;\nfont-size: 12px;\nfont-family: Georgia;\n}\n\ndiv > .vimiumHintMarker > .matchingCharacter {\n}",
+  "exclusionRules": [ ]
+}
