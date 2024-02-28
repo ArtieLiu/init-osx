@@ -11,30 +11,31 @@ set hls
 
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
+nnoremap t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>rc :e ~/.ideavimrc<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
+nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
 nnoremap <leader>bl :action Annotate<CR>
+nnoremap <leader>df :action ShowBlankDiffWindow<CR>
+nnoremap <leader>er :action ShowErrorDescription<CR>
 nnoremap <leader>f :action FindInPath<CR>
+nnoremap <leader>id :action DebugClass<CR>
+nnoremap <leader>ir :action RunClass<CR>
 nnoremap <leader>l :action SelectInProjectView<CR>
 nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
+nnoremap <leader>n :action VcsShowNextChangeMarker<CR>
+nnoremap <leader>p :action VcsShowPrevChangeMarker<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>t :action GotoTest<CR>
+nnoremap <leader>w :action EditorToggleUseSoftWraps<CR>
 nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
-nnoremap <leader>df :action ShowBlankDiffWindow<CR>
-nnoremap <leader>ir :action RunClass<CR>
-nnoremap <leader>id :action DebugClass<CR>
-nnoremap <leader>sw :action EditorToggleUseSoftWraps<CR>
-nnoremap <leader>w :action EditorToggleUseSoftWraps<CR>
-nnoremap <leader>er :action ShowErrorDescription<CR>
 vnoremap <leader>ev :action EvaluateExpression<CR>
-nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
 
 " ========= TABs ============"
 " map <leader>l :action NextSplitter<CR>
 map <leader>mr :action MoveTabRight<CR>
-map <leader>u :action MoveEditorToOppositeTabGroup<CR>
 
 " move to previous or next method
 nnoremap [[ :action MethodUp<CR>
@@ -75,10 +76,6 @@ set argtextobj
 let g:argtextobj_pairs="(:),{:},<:>,[:]"
 
 set multiple-cursors
-
-" source https://youtrack.jetbrains.com/issue/VIM-542
-" nnoremap g; :action JumpToLastChange<Enter>
-" nnoremap g, :action JumpToNextChange<Enter>
 
 " AceJump
 nnoremap / :action AceAction<CR>
