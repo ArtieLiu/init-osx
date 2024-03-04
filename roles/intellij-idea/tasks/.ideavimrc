@@ -29,7 +29,8 @@ nnoremap <leader>p :action VcsShowPrevChangeMarker<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nnoremap <leader>t :action GotoTest<CR>
 nnoremap <leader>w :action EditorToggleUseSoftWraps<CR>
-nnoremap <leader>x :action HideAllWindows<CR>
+nnoremap <leader>h :action HideAllWindows<CR>
+nnoremap <leader>x :action CloseProject<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 vnoremap <leader>ev :action EvaluateExpression<CR>
 
