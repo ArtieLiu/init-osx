@@ -20,7 +20,7 @@ remap(HYPER     , 'h', pressFn('alt', 'left'))
 remap(HYPER     , 'l', pressFn('alt', 'right'))
 
 hs.hotkey.bind(HYPER_LITE, ",", launch("System Settings"))
-hs.hotkey.bind(HYPER_LITE, "f", function() hs.execute("open ~/Downloads") end)
+hs.hotkey.bind(HYPER_LITE, "f", function() hs.execute("open ~/Desktop") end)
 hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
 hs.hotkey.bind(HYPER_LITE, "o", launch("Google Chrome"))
