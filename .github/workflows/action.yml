@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install ansible
-        run: python3 -m pip install --user ansible
+        run: brew install ansible; brew link ansible
 
 #      - name: Run playbook
 #        uses: dawidd6/action-ansible-playbook@v2
