@@ -10,21 +10,21 @@
 
 - name: link utils.lua
   file:
-    src: "~/Projects/init-osx/roles/hammerspoon/tasks/utils.lua"
+    src: "{{ project_home }}/roles/hammerspoon/tasks/utils.lua"
     path: "~/.hammerspoon/utils.lua"
     state: link
     force: true
 
 - name: link basic_map.lua
   file:
-    src: "~/Projects/init-osx/roles/hammerspoon/tasks/basic_map.lua"
+    src: "{{ project_home }}/roles/hammerspoon/tasks/basic_map.lua"
     path: "~/.hammerspoon/basic_map.lua"
     state: link
     force: true
 
 - name: link init.lua
   file:
-    src: "~/Projects/init-osx/roles/hammerspoon/tasks/init.lua"
+    src: "{{ project_home }}/roles/hammerspoon/tasks/init.lua"
     path: "~/.hammerspoon/init.lua"
     state: link
     force: true

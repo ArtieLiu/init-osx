@@ -9,7 +9,7 @@
 
 #- name: link k9s
 #  file:
-#    src: "~/Projects/init-osx/roles/k9s/tasks/views.yml"
+#    src: "{{ project_home }}/roles/k9s/tasks/views.yml"
 #    path: "~/Library/Preferences/k9s/views.yml"
 #    state: link
 #    force: true

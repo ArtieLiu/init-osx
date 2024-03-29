@@ -1,35 +1,35 @@
 # https://www.talkingquickly.co.uk/2021/01/macos-setup-with-ansible/
 - hosts: localhost
   roles:
-#    - snipaste
-#    - hammerspoon
-#    - hyperkey
-#    - contexts
-#    - raycast
-#    - mirrordisplays
-#    - bartender
+    - snipaste
+    - hammerspoon
+    - hyperkey
+    - contexts
+    - raycast
+    - mirrordisplays
+    - bartender
     - multitouch
-#    - karabiner
-#    - spectacle
-#    - stats
-#    - chrome
-#    - sublime
-#    - iterm2
-#    - zsh
-#    - vim
-#    - intellij-idea
-#    - git
-#    - k9s
-#    - obsidian
-#    - 1password
-#    - rancher
-#    - lunar
-#    - gifox
-#    - keepingyouawake
-#    - microsoft-office
-#    - skype
-#    - topnotch
-#    - wechat
+    - karabiner
+    - spectacle
+    - stats
+    - chrome
+    - sublime
+    - iterm2
+    - zsh
+    - vim
+    - intellij-idea
+    - git
+    - k9s
+    - obsidian
+    - 1password
+    - rancher
+    - lunar
+    - gifox
+    - keepingyouawake
+    - microsoft-office
+    - skype
+    - topnotch
+    - wechat
 
   vars:
     project_home: "~/Projects/init-osx"

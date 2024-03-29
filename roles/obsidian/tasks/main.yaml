@@ -9,7 +9,7 @@
 
 - name: link obsidian vim config
   file:
-    src: "~/Projects/init-osx/roles/obsidian/tasks/.obsidian.vimrc"
+    src: "{{ project_home }}/roles/obsidian/tasks/.obsidian.vimrc"
     path: "~/Documents/Knowledges/.obsidian.vimrc"
     state: link
     force: true

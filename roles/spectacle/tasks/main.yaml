@@ -10,7 +10,7 @@
 
 - name: "link Spectacle config"
   file:
-    src: "~/Projects/init-osx/roles/spectacle/tasks/Shortcuts.json"
+    src: "{{ project_home }}/roles/spectacle/tasks/Shortcuts.json"
     path: "~/Library/Application Support/Spectacle/Shortcuts.json"
     state: link
     force: true

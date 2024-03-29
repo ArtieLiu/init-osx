@@ -10,7 +10,7 @@
 
 - name: link snipaste
   file:
-    src: "~/Projects/init-osx/roles/snipaste/tasks/config.ini"
+    src: "{{ project_home }}/roles/snipaste/tasks/config.ini"
     path: "~/.snipaste/config.ini"
     state: link
     force: true

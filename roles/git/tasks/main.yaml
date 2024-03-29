@@ -1,6 +1,6 @@
 - name: Link .gitignore_global
   ansible.builtin.file:
-    src: "~/Projects/init-osx/roles/git/tasks/.gitignore_global"
+    src: "{{ project_home }}/roles/git/tasks/.gitignore_global"
     path: "~/.gitignore_global"
     state: link
     force: true

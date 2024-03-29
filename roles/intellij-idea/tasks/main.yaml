@@ -5,7 +5,7 @@
 
 - name: "Link ideavimrc"
   ansible.builtin.file:
-    src: "~/Projects/init-osx/roles/intellij-idea/tasks/.ideavimrc"
+    src: "{{ project_home }}/roles/intellij-idea/tasks/.ideavimrc"
     path: "~/.ideavimrc"
     state: link
 

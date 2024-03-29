@@ -15,6 +15,6 @@
 
 - name: "Link init.vim"
   file:
-    src: "~/Projects/init-osx/roles/vim/tasks/init.vim"
+    src: "{{ project_home }}/roles/vim/tasks/init.vim"
     path: "~/.config/nvim/init.vim"
     state: link

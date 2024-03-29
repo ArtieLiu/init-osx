@@ -6,7 +6,7 @@
 
 - name: "link zsh aliases"
   file:
-    src: "~/Projects/init-osx/roles/zsh/tasks/.zsh_aliases"
+    src: "{{ project_home }}/roles/zsh/tasks/.zsh_aliases"
     path: "~/.zsh_aliases"
     state: link
 
