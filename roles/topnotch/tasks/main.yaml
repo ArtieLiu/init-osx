@@ -1,0 +1,5 @@
+- app: "Installing topnotch"
+  community.general.homebrew_cask:
+    app: 'topnotch'
+    state: present
+    update_homebrew: no

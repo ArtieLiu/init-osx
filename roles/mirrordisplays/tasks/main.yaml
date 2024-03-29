@@ -1,0 +1,5 @@
+- app: "Installing mirrordisplays"
+  community.general.homebrew_cask:
+    app: 'mirrordisplays'
+    state: present
+    update_homebrew: no

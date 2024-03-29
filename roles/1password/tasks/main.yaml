@@ -1,0 +1,5 @@
+- app: "Installing 1password"
+  community.general.homebrew_cask:
+    app: '1password'
+    state: present
+    update_homebrew: no

@@ -1,0 +1,5 @@
+- app: "Installing skype"
+  community.general.homebrew_cask:
+    app: 'skype'
+    state: present
+    update_homebrew: no

@@ -1,0 +1,5 @@
+- app: "Installing gifox"
+  community.general.homebrew_cask:
+    app: 'gifox'
+    state: present
+    update_homebrew: no
