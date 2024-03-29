@@ -6,6 +6,11 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: ./run.sh
+#      - uses: actions/checkout@v3
+#      - name: Run a one-line script
+#        run: ./run.sh
+
+      - name: Run playbook
+        uses: dawidd6/action-ansible-playbook@v2
+        with:
+          playbook: playbook.yaml
