@@ -1,6 +1,7 @@
 - name: "Install Spectacle"
   community.general.homebrew_cask:
     name: 'spectacle'
+    accept_external_apps: true
 
 - name: "Create directory for Spectacle configs"
   file:

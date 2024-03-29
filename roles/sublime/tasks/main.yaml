@@ -3,6 +3,7 @@
     name: 'sublime-text'
     state: present
     update_homebrew: no
+    accept_external_apps: true
 
 - name: "Create directory for Sublime configs"
   file:

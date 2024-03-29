@@ -1,5 +1,6 @@
-- app: "Installing raycast"
+- name: "Installing raycast"
   community.general.homebrew_cask:
-    app: 'raycast'
+    name: 'raycast'
     state: present
     update_homebrew: no
+    accept_external_apps: true

@@ -1,6 +1,7 @@
 - name: "Install Iterm2"
   community.general.homebrew_cask:
     name: 'iterm2'
+    accept_external_apps: true
 
 - name: Copy iterm2.plist
   file:

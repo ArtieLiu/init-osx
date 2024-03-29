@@ -1,5 +1,6 @@
-- app: "Installing microsoft-office"
+- name: "Installing microsoft-office"
   community.general.homebrew_cask:
-    app: 'microsoft-office'
+    name: 'microsoft-office'
     state: present
     update_homebrew: no
+    accept_external_apps: true

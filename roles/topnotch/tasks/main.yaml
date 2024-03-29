@@ -1,5 +1,6 @@
-- app: "Installing topnotch"
+- name: "Installing topnotch"
   community.general.homebrew_cask:
-    app: 'topnotch'
+    name: 'topnotch'
     state: present
     update_homebrew: no
+    accept_external_apps: true

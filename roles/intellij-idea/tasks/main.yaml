@@ -1,6 +1,7 @@
 - name: "Install Intellij-idea"
   community.general.homebrew_cask:
     name: 'intellij-idea'
+    accept_external_apps: true
 
 - name: "Link ideavimrc"
   ansible.builtin.file:

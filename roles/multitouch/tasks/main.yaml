@@ -1,6 +1,7 @@
-#- name: "Install multitouch"
-#  community.general.homebrew_cask:
-#    name: 'multitouch'
+- name: "Install multitouch"
+  community.general.homebrew_cask:
+    name: 'multitouch'
+    accept_external_apps: true
 
 - name: 'link conifg'
   file:

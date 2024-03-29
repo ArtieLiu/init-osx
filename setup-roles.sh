@@ -1,10 +1,10 @@
 main_template=$(cat <<-END
-- app: "Installing {{app}}"
+- name: "Installing {{app}}"
   community.general.homebrew_cask:
-    app: '{{app}}'
+    name: '{{app}}'
     state: present
     update_homebrew: no
-
+    accept_external_apps: true
 END
 )
 

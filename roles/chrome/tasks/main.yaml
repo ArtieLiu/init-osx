@@ -3,3 +3,4 @@
     name: 'google-chrome'
     state: present
     update_homebrew: no
+    accept_external_apps: true

@@ -1,6 +1,7 @@
 - name: "Install Sinpaste"
   community.general.homebrew_cask:
     name: 'snipaste'
+    accept_external_apps: true
 
 - name: create snipaste config directory
   ansible.builtin.file:

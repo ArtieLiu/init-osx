@@ -1,6 +1,7 @@
 - name: "Install Hammerspoon"
   community.general.homebrew_cask:
     name: 'hammerspoon'
+    accept_external_apps: true
 
 - name: Make .hammerspoon folder
   file:

@@ -1,5 +1,6 @@
-- app: "Installing bartender"
+- name: "Installing bartender"
   community.general.homebrew_cask:
-    app: 'bartender'
+    name: 'bartender'
     state: present
     update_homebrew: no
+    accept_external_apps: true

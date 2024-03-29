@@ -3,3 +3,4 @@
 - name: "Install Contexts"
   community.general.homebrew_cask:
     name: 'contexts'
+    accept_external_apps: true

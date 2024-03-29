@@ -1,5 +1,6 @@
-- app: "Installing mirrordisplays"
+- name: "Installing mirrordisplays"
   community.general.homebrew_cask:
-    app: 'mirrordisplays'
+    name: 'mirrordisplays'
     state: present
     update_homebrew: no
+    accept_external_apps: true

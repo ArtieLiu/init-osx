@@ -1,5 +1,6 @@
-- app: "Installing lunar"
+- name: "Installing lunar"
   community.general.homebrew_cask:
-    app: 'lunar'
+    name: 'lunar'
     state: present
     update_homebrew: no
+    accept_external_apps: true

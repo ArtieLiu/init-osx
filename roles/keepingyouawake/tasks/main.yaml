@@ -1,5 +1,6 @@
-- app: "Installing keepingyouawake"
+- name: "Installing keepingyouawake"
   community.general.homebrew_cask:
-    app: 'keepingyouawake'
+    name: 'keepingyouawake'
     state: present
     update_homebrew: no
+    accept_external_apps: true

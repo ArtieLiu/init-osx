@@ -4,3 +4,4 @@
     name: 'stats'
     state: present
     update_homebrew: no
+    accept_external_apps: true

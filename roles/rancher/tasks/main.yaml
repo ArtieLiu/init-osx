@@ -1,5 +1,6 @@
-- app: "Installing rancher"
+- name: "Installing rancher"
   community.general.homebrew_cask:
-    app: 'rancher'
+    name: 'rancher'
     state: present
     update_homebrew: no
+    accept_external_apps: true

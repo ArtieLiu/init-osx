@@ -1,5 +1,6 @@
-- app: "Installing wechat"
+- name: "Installing wechat"
   community.general.homebrew_cask:
-    app: 'wechat'
+    name: 'wechat'
     state: present
     update_homebrew: no
+    accept_external_apps: true
