@@ -7,14 +7,7 @@
   file:
     src: "{{ project_home }}/roles/iterm2/tasks/com.googlecode.iterm2.plist"
     path: "~/Library/Preferences/com.googlecode.iterm2.plist"
-    state: link
-    force: true
-
-- name: Copy iterm2.private.plist
-  file:
-    src: "{{ project_home }}/roles/iterm2/tasks/com.googlecode.iterm2.private.plist"
-    path: "~/Library/Preferences/com.googlecode.iterm2.private.plist"
-    state: link
+    state: hard # must be hard link
     force: true
 
 - name: "Install terminal tools"
@@ -31,8 +24,7 @@
       'tree',
       'wget',
       'tldr',
-      'exa',
-      'jenv',
+      'eza',
     ]
     state: present
     update_homebrew: no
