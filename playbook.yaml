@@ -32,4 +32,4 @@
     - wechat
 
   vars:
-    project_home: "~/Projects/init-osx"
+    project_home: "{{ lookup('env', 'PWD') }}"
