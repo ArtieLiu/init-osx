@@ -1,0 +1,6 @@
+- name: "Installing logi-options-plus"
+  community.general.homebrew_cask:
+    name: 'logi-options-plus'
+    state: present
+    update_homebrew: no
+    accept_external_apps: true
