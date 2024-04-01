@@ -18,3 +18,8 @@
     src: "{{ project_home }}/roles/vim/tasks/init.vim"
     path: "~/.config/nvim/init.vim"
     state: link
+
+- name: "Install vim plug"
+  shell: >
+    # export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890; 
+    nvim +'PlugInstall --sync' +qa
