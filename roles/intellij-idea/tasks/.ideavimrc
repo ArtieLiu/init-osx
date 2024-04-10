@@ -13,6 +13,8 @@ nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
 nnoremap t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>rc :e ~/.ideavimrc<CR>
+nnoremap ] :action GotoImplementation<CR>
+nnoremap [ :action GotoDeclaration<CR>
 nnoremap I :action GotoImplementation<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
@@ -40,8 +42,8 @@ vnoremap <leader>ev :action EvaluateExpression<CR>
 map <leader>mr :action MoveTabRight<CR>
 
 " move to previous or next method
-nnoremap [[ :action MethodUp<CR>
-nnoremap ]] :action MethodDown<CR>
+" nnoremap [[ :action MethodUp<CR>
+" nnoremap ]] :action MethodDown<CR>
 
 " errors
 nnoremap ge :action GotoNextError<CR>
