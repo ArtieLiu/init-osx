@@ -1,6 +1,7 @@
 {
 	"font_size": 17,
-	"ignored_packages": [],
+	"ignored_packages": [
+	],
 	"always_show_minimap_viewport" : true,
 	"bold_folder_labels"           : true,
 	"font_options"                 : ["gray_antialias", "subpixel_antialias"], // On retina Mac & Windows

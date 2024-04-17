@@ -10,10 +10,5 @@ jobs:
       - name: Install ansible
         run: brew install ansible; brew link ansible
 
-#      - name: Run playbook
-#        uses: dawidd6/action-ansible-playbook@v2
-#        with:
-#          playbook: playbook.yaml
-
       - name: Run playbook
         run: bash run.sh

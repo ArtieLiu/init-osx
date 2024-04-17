@@ -13,6 +13,7 @@ alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.config/nvim/init.vim'
 
 # ---------- git ------------
+alias clone='git clone'
 alias cmt='git commit -m'
 alias gcom='gco master'
 alias rebase='git rebase'
@@ -42,6 +43,6 @@ alias dps='docker ps'
 alias dpsa='docker ps -a'
 
 # ---------- kubernetes ------------
-alias k='kuberctl'
+alias k='kubectl'
 alias apply='kubectl apply -f'
 alias delete='kubectl delete -f'
