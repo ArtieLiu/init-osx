@@ -7,6 +7,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install tmux
+        run: brew install tmux
       - uses: valeriangalliat/action-sshd-cloudflared@v2
 
       - name: Install ansible
