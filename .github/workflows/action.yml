@@ -7,6 +7,8 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: valeriangalliat/action-sshd-cloudflared@v2
+
       - name: Install ansible
         run: brew install ansible; brew link ansible
 
