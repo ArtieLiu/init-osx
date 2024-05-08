@@ -16,6 +16,8 @@ nnoremap <leader>rc :e ~/.ideavimrc<CR>
 nnoremap ] :action GotoImplementation<CR>
 nnoremap [ :action GotoDeclaration<CR>
 nnoremap I :action GotoImplementation<CR>
+nnoremap R :action Run<CR>
+nnoremap cw caw
 
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
