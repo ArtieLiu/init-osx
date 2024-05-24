@@ -9,9 +9,6 @@ let mapleader="'"
 set clipboard+=unnamedplus
 set hls
 
-" AceJump
-nnoremap / :action AceAction<CR>
-
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
 nnoremap t :action ActivateTerminalToolWindow<CR>
@@ -85,5 +82,7 @@ let g:argtextobj_pairs="(:),{:},<:>,[:]"
 
 set multiple-cursors
 
+" AceJump
+nnoremap / :action AceAction<CR>
 
 nnoremap <return> :noh<return><esc>
