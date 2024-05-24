@@ -16,8 +16,8 @@ remap(HYPER_LITE, 'h', pressFn('left'))
 remap(HYPER_LITE, 'j', pressFn('down'))
 remap(HYPER_LITE, 'k', pressFn('up'))
 remap(HYPER_LITE, 'l', pressFn('right'))
-remap(HYPER     , 'h', pressFn('alt', 'left'))
-remap(HYPER     , 'l', pressFn('alt', 'right'))
+remap({ "ctrl", "cmd" }, 'h', pressFn('alt', 'left'))
+remap({ "ctrl", "cmd" }, 'l', pressFn('alt', 'right'))
 
 ----------- reload config ------------
 hs.hotkey.bind(HYPER, "r",
