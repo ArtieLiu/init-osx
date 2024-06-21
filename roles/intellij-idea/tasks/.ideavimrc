@@ -9,6 +9,10 @@ let mapleader="'"
 set clipboard+=unnamedplus
 set hls
 
+" turn off the annoying sound when jump to bookmark, see: http://jason-stillwell.com/blog/2013/04/11/ideavim/
+set visualbell
+set noerrorbells
+
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
 nnoremap t :action ActivateTerminalToolWindow<CR>
@@ -18,6 +22,7 @@ nnoremap [ :action GotoDeclaration<CR>
 nnoremap I :action GotoImplementation<CR>
 nnoremap R :action Run<CR>
 
+"vnoremap <leader>s :action SurroundWith<CR> useless seems
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
 nnoremap <leader>bl :action Annotate<CR>
@@ -31,6 +36,7 @@ nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>n :action VcsShowNextChangeMarker<CR>
 nnoremap <leader>p :action VcsShowPrevChangeMarker<CR>
 nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>ra :action RunAnything<CR>
 nnoremap <leader>t :action GotoTest<CR>
 nnoremap <leader>w :action EditorToggleUseSoftWraps<CR>
 nnoremap <leader>h :action HideAllWindows<CR>
@@ -86,3 +92,5 @@ set multiple-cursors
 nnoremap / :action AceAction<CR>
 
 nnoremap <return> :noh<return><esc>
+
+Plug 'tpope/vim-surround'
