@@ -14,7 +14,8 @@ alias vimrc='vim ~/.config/nvim/init.vim'
 
 # ---------- git ------------
 alias clone='git clone'
-alias cmt='git commit -m'
+# alias cmt='git commit -m'
+alias cmt='/usr/local/bin/cmt'
 alias amd='git commit --amend --no-edit'
 alias amend='git commit --amend --no-edit'
 alias gcom='gco main'
@@ -25,7 +26,6 @@ alias force='git push -f'
 
 alias pop='git stash pop'
 alias drop='git stash drop'
-alias cmt='git commit -m'
 
 # ---------- maven ------------
 alias mci='mvn clean install'
@@ -46,12 +46,16 @@ alias b='gradle build'
 alias clean='gradle clean'
 
 # ---------- docker ------------
-alias dps='docker ps'
+alias dps='docker ps | docker-color-output'
 alias ds='docker stop'
-alias dpsa='docker ps -a'
+alias dpsa='docker ps -a | docker-color-output'
 alias up='docker compose up'
+alias down='docker compose down'
 
 # ---------- kubernetes ------------
 alias k='kubectl'
 alias apply='kubectl apply -f'
 alias delete='kubectl delete -f'
+
+
+alias init-npm='export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  ; [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
