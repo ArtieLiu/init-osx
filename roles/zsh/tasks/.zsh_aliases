@@ -11,6 +11,7 @@ alias history='history | tail -n 100'
 alias zshalias='vim ~/.zsh_aliases'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.config/nvim/init.vim'
+alias zed="/Applications/Zed.app/Contents/MacOS/cli"
 
 # ---------- git ------------
 alias clone='git clone'
@@ -42,7 +43,7 @@ alias format='mvn antrun:run@ktlint-format'
 
 # ---------- gradle ------------
 alias build='gradle build'
-alias b='gradle build'
+alias b='./gradlew checkstyleMain checkstyleTest integrationTest'
 alias clean='gradle clean'
 
 # ---------- docker ------------

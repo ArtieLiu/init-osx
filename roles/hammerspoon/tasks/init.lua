@@ -6,7 +6,7 @@ hs.hotkey.bind(HYPER_LITE, "f", function() hs.execute("open ~/Downloads") end)
 hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("iTerm"))
 hs.hotkey.bind(HYPER_LITE, "o", launch("Google Chrome"))
-hs.hotkey.bind(HYPER_LITE, "n", launch("visual studio code"))
+hs.hotkey.bind(HYPER_LITE, "n", launch("zed"))
 
 hs.hotkey.bind(HYPER_LITE, "e", launch("poe"))
 hs.hotkey.bind(HYPER_LITE, "s", launch("surge"))
