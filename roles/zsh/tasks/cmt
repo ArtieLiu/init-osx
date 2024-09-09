@@ -1,9 +1,6 @@
 #!/bin/bash
 
-branch_name=`git rev-parse --abbrev-ref HEAD`
+branch_name=$(git rev-parse --abbrev-ref HEAD)
 ticket_number=${branch_name%%_*}
 
 git commit -m "$ticket_number: $1"
-
-
-

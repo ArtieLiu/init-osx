@@ -1,13 +1,12 @@
 # use `k9s info` to see where the configurations are saved
-k9s:
-  views:
-    # Alters the pod view column layout. Uses GVR as key
-    v1/pods:
-      columns:
-        - NAMESPACE
-        - NAME
-        - PF
-        - RESTARTS
-        - STATUS
-        - READY
-        - AGE
+views:
+  # Alters the pod view column layout. Uses GVR as key
+  v1/pods:
+    columns:
+      - NAMESPACE
+      - NAME
+      - PF
+      - RESTARTS
+      - STATUS
+      - READY
+      - AGE

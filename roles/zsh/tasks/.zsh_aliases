@@ -42,9 +42,9 @@ alias mcisqd='mvn clean deploy -T7 -Dmaven.test.skip.exec=true -Djetty.skip=true
 alias format='mvn antrun:run@ktlint-format'
 
 # ---------- gradle ------------
-alias build='gradle build'
-alias b='./gradlew checkstyleMain checkstyleTest integrationTest'
+alias b='./gradlew check checkstyleMain checkstyleTest integrationTest'
 alias clean='gradle clean'
+alias compile='./gradlew compileJava compileTestJava'
 
 # ---------- docker ------------
 alias dps='docker ps | docker-color-output'
@@ -54,9 +54,17 @@ alias up='docker compose up'
 alias down='docker compose down'
 
 # ---------- kubernetes ------------
-alias k='kubectl'
+alias k='k9s'
 alias apply='kubectl apply -f'
 alias delete='kubectl delete -f'
+alias k9stest='awsume fe-test-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:862276445914:cluster/test; k9s'
+alias k9sprod='awsume fe-prod-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:975616425746:cluster/prod; k9s'
 
+alias kt='k9stest'
+alias kp='k9sprod'
+
+# ----------- aws ------------------
+alias loginaws='awsume fe-test-poweruser'
+alias loginecr='awsume fe-test-poweruser ; aws ecr get-login-password | docker login --username AWS --password-stdin 862276445914.dkr.ecr.ap-southeast-2.amazonaws.com'
 
 alias init-npm='export NVM_DIR="$HOME/.nvm"; [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  ; [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
