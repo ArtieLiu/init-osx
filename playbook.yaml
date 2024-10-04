@@ -7,28 +7,31 @@
     - spectacle
     - multitouch
     - raycast
-    - hyperkey
+#    - hyperkey
     - contexts
 
     # helpers
     - bartender
-    - snipaste
+    - cleanshot
     - mirrordisplays
     - lunar
     - 1password
     - obsidian
-    - stats
+#    - stats
     - keepingyouawake
     - gifox
+    - localsend
 
     # dev
-    - iterm2
+#    - iterm2 // use alacrity for better performance
+    - alacrity
     - sublime
     - zsh
     - vim
     - git
     - k9s
-    - rancher
+#    - rancher
+    - orbstack
     - intellij-idea
 
     # life

@@ -1,0 +1,6 @@
+- name: "Installing alacrity"
+  community.general.homebrew_cask:
+    name: 'alacrity'
+    state: present
+    update_homebrew: no
+    accept_external_apps: true

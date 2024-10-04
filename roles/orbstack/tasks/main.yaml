@@ -1,6 +1,6 @@
-- name: "Installing rancher"
+- name: "Installing orbstack"
   community.general.homebrew_cask:
-    name: 'rancher'
+    name: 'orbstack'
     state: present
     update_homebrew: no
     accept_external_apps: true
