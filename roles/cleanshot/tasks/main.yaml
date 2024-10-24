@@ -1,0 +1,6 @@
+- name: "Installing cleanshot"
+  community.general.homebrew_cask:
+    name: 'cleanshot'
+    state: present
+    update_homebrew: no
+    accept_external_apps: true
