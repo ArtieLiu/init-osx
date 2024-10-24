@@ -16,15 +16,12 @@
     - mirrordisplays
     - lunar
     - 1password
-    - obsidian
-#    - stats
     - keepingyouawake
     - gifox
     - localsend
 
     # dev
-#    - iterm2 // use alacrity for better performance
-    - alacrity
+#    - alacrity // install manually
     - sublime
     - zsh
     - vim
