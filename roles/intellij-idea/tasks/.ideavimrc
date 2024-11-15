@@ -89,8 +89,7 @@ let g:argtextobj_pairs="(:),{:},<:>,[:]"
 set multiple-cursors
 
 " AceJump
-" nnoremap / :action AceAction<CR>
-nnoremap ; :action AceAction<CR>
+nnoremap / :action AceAction<CR>
 
 nnoremap <return> :noh<return><esc>
 
