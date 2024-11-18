@@ -1,6 +1,7 @@
 require("basic_map")
 
 hs.hotkey.bind(HYPER_LITE, ",", launch("System Settings"))
+hs.hotkey.bind(HYPER_LITE, ".", launch("Reminders"))
 hs.hotkey.bind(HYPER_LITE, "f",                function()
                                                    hs.execute("open ~/Desktop")
                                                end)
