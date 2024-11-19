@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Check if at least two arguments are provided
+if [ $# -lt 2 ]; then
+  echo "Usage: nb ticket-number 'summary'"
+  exit 1
+fi
+
+# Extract the ticket number
+ticket_number=$1
+shift
+
+# Combine the rest of the arguments as the summary
+summary="$@"
+
+# Replace spaces with hyphens in the summary
+branch_summary=${summary// /-}
+
+# Construct the branch name
+branch_name="MARS-${ticket_number}_${branch_summary}"
+
+# Create the new git branch
+git checkout -b "$branch_name"

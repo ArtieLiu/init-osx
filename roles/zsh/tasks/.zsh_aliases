@@ -28,6 +28,7 @@ alias force='git push -f'
 
 alias pop='git stash pop'
 alias drop='git stash drop'
+alias glod='git log --pretty=format:"%C(cyan)%ad%Creset %C(yellow)%h%Creset %C(white)%s%Creset %C(red)%d%Creset" --date=format:'%Y-%m-%d %H:%M:%S' --decorate'
 
 # ---------- maven ------------
 alias mci='mvn clean install'
