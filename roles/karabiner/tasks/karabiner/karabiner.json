@@ -5,6 +5,22 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Emit '1' when 'middle key' + 'j' are pressed simultaneously",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["any"] },
+                                    "simultaneous": [
+                                        { "pointing_button": "button3" },
+                                        { "key_code": "j" }
+                                    ]
+                                },
+                                "to": [{ "key_code": "1" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "manipulators": [
                             {
                                 "description": "Caps_lock to Ctrl/Escape",
@@ -48,6 +64,26 @@
                         {
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "right_command" }]
+                        },
+                        {
+                            "from": { "key_code": "f1" },
+                            "to": [{ "consumer_key_code": "mute" }]
+                        },
+                        {
+                            "from": { "key_code": "f2" },
+                            "to": [{ "consumer_key_code": "volume_decrement" }]
+                        },
+                        {
+                            "from": { "key_code": "f3" },
+                            "to": [{ "consumer_key_code": "volume_increment" }]
+                        },
+                        {
+                            "from": { "key_code": "f5" },
+                            "to": [{ "apple_vendor_top_case_key_code": "illumination_down" }]
+                        },
+                        {
+                            "from": { "key_code": "f6" },
+                            "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
                         }
                     ]
                 },

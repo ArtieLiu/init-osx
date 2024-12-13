@@ -3,6 +3,7 @@ alias tree="tree -C"
 alias o="open"
 alias c='clear'
 alias ll='eza -l -s date'
+alias l=ll
 alias cat='bat'
 alias rmlogfiles='sudo rm /private/var/log/asl/*.asl'
 alias vim='nvim'
@@ -12,6 +13,7 @@ alias zshalias='vim ~/.zsh_aliases'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.config/nvim/init.vim'
 alias zed="/Applications/Zed.app/Contents/MacOS/cli"
+alias idea='hap run -- idea'
 
 # ---------- git ------------
 alias clone='git clone'
