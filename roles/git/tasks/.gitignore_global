@@ -5,3 +5,4 @@
 **/*.out
 **/*.class
 **/scratches/
+**/node_modules/
