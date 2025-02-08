@@ -17,17 +17,13 @@ alias zed="/Applications/Zed.app/Contents/MacOS/cli"
 alias idea='hap run -- idea'
 
 # ---------- git ------------
-alias clone='git clone'
 # alias cmt='git commit -m'
 alias cmt='/usr/local/bin/cmt'
-alias amd='git commit --amend --no-edit'
 alias amend='git commit --amend --no-edit'
 alias gcom='gco main'
 alias rebase='git rebase'
-alias pullrebase='git checkout main; git pull; git checkout -; git rebase main'
 alias stash='git stash'
 alias push='git push'
-alias force='git push -f'
 
 alias pop='git stash pop'
 alias drop='git stash drop'
@@ -53,7 +49,6 @@ alias compile='./gradlew compileJava compileTestJava'
 
 # ---------- docker ------------
 alias dps='docker ps | docker-color-output'
-alias ds='docker stop'
 alias dpsa='docker ps -a | docker-color-output'
 alias up='docker compose up'
 alias down='docker compose down'
@@ -61,13 +56,9 @@ alias ld='lazydocker'
 
 # ---------- kubernetes ------------
 alias k='k9s'
-alias apply='kubectl apply -f'
-alias delete='kubectl delete -f'
-alias k9stest='awsume fe-test-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:862276445914:cluster/test; k9s'
-alias k9sprod='awsume fe-prod-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:975616425746:cluster/prod; k9s'
 
-alias kt='k9stest'
-alias kp='k9sprod'
+alias kt='awsume fe-test-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:862276445914:cluster/test; k9s'
+alias kp='awsume fe-prod-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:975616425746:cluster/prod; k9s'
 
 # ----------- aws ------------------
 alias loginaws='awsume fe-test-poweruser'

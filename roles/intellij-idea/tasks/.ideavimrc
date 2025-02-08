@@ -13,6 +13,10 @@ set hls
 set visualbell
 set noerrorbells
 
+" https://stackoverflow.com/a/74935585
+" paste without yanking the deleted text
+xnoremap p P
+
 nnoremap H :action PreviousTab<CR>
 nnoremap L :action NextTab<CR>
 nnoremap t :action ActivateTerminalToolWindow<CR>
@@ -20,6 +24,7 @@ nnoremap ] :action GotoImplementation<CR>
 nnoremap [ :action GotoDeclaration<CR>
 nnoremap I :action GotoImplementation<CR>
 nnoremap f :action FindInPath<CR>
+vnoremap f :action FindInPath<CR>
 nnoremap R :action RunAnything<CR>
 nnoremap / :action GotoFile<CR>
 nnoremap ge :action GotoNextError<CR>
