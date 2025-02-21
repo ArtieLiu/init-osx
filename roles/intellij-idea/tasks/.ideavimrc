@@ -26,22 +26,24 @@ nnoremap I :action GotoImplementation<CR>
 nnoremap f :action FindInPath<CR>
 vnoremap f :action FindInPath<CR>
 nnoremap R :action RunAnything<CR>
-nnoremap / :action GotoFile<CR>
+nnoremap / :action GotoUrlAction<CR>
 nnoremap ge :action GotoNextError<CR>
+nnoremap r :action RunClass<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
 nnoremap <leader>bl :action Annotate<CR>
 nnoremap <leader>c :e ~/.ideavimrc<CR>
-nnoremap <leader>df :action ShowBlankDiffWindow<CR>
+"nnoremap <leader>df :action ShowBlankDiffWindow<CR>
 nnoremap <leader>er :action ShowErrorDescription<CR>
-nnoremap <leader>h :action HideAllWindows<CR>
-nnoremap <leader>id :action DebugClass<CR>
-nnoremap <leader>iv :action IntroduceVariable<CR>
+" nnoremap <leader>h :action HideAllWindows<CR>
+nnoremap <leader>h :action HideActiveWindow<CR>
+nnoremap <leader>d :action DebugClass<CR>
+nnoremap <leader>v :action IntroduceVariable<CR>
 nnoremap <leader>l :action SelectInProjectView<CR>
-nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
+" nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>n :action RenameElement<CR>
-nnoremap <leader>r :action RunClass<CR>
+"nnoremap <leader>r :action RunClass<CR>
 nnoremap <leader>s :action EditorToggleUseSoftWraps<CR>
 nnoremap <leader>t :action GotoTest<CR>
 nnoremap <leader>x :action CloseProject<CR>
@@ -69,6 +71,18 @@ set incsearch
 
 " https://github.com/JetBrains/ideavim/wiki/Emulated-plugins
 set ideamarks " default is true
+
+" intellij sets bookmarks globally, this prevents jumping to bookmarks in other projects
+nmap <leader>0 :action GotoBookmark0<CR>
+nmap <leader>1 :action GotoBookmark1<CR>
+nmap <leader>2 :action GotoBookmark2<CR>
+nmap <leader>3 :action GotoBookmark3<CR>
+nmap <leader>4 :action GotoBookmark4<CR>
+nmap <leader>5 :action GotoBookmark5<CR>
+nmap <leader>6 :action GotoBookmark6<CR>
+nmap <leader>7 :action GotoBookmark7<CR>
+nmap <leader>8 :action GotoBookmark8<CR>
+nmap <leader>9 :action GotoBookmark9<CR>
 
 " https://github.com/dbakker/vim-paragraph-motion#vim-paragraph-motion
 set vim-paragraph-motion
