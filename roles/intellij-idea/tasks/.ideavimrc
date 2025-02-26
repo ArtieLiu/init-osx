@@ -29,6 +29,7 @@ nnoremap R :action RunAnything<CR>
 nnoremap / :action GotoUrlAction<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap r :action RunClass<CR>
+nnoremap N :action NotebookInsertCellBelowToolbarAction<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
