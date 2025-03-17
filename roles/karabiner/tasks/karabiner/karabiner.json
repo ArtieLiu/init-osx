@@ -26,6 +26,25 @@
                     {
                         "manipulators": [
                             {
+                                "description": "space to space/ctrl",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "left_control" }],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "lazy": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
                                 "description": "Enter to Enter/Ctrl",
                                 "from": {
                                     "key_code": "return_or_enter",
