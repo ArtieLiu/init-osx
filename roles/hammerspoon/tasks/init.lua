@@ -9,7 +9,7 @@ hs.hotkey.bind(HYPER_LITE, "f",                function()
 hs.hotkey.bind(HYPER_LITE, "p", launch("IntelliJ IDEA"))
 hs.hotkey.bind(HYPER_LITE, "i", launch("alacritty"))
 hs.hotkey.bind(HYPER_LITE, "o", launch("Google Chrome"))
-hs.hotkey.bind(HYPER_LITE, "g", launch("Grok"))
+hs.hotkey.bind(HYPER_LITE, "g", launch("Google AI Studio"))
 
 hs.hotkey.bind(HYPER_LITE, "m", launch("NetEaseMusic"))
 hs.hotkey.bind(HYPER_LITE, "n", launch("Sublime Text"))

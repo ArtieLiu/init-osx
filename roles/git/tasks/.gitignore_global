@@ -6,3 +6,5 @@
 **/*.class
 **/scratches/
 **/node_modules/
+.env
+**/.run

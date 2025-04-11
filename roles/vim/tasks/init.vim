@@ -141,12 +141,12 @@ endif
 " let g:material_theme_style = 'palenight' 
 " let g:material_theme_style = 'ocean' 
 " let g:material_theme_style = 'lighter'
-" let g:material_theme_style = 'darker' 
+let g:material_theme_style = 'darker' 
 " let g:material_theme_style = 'default-community' 
 " let g:material_theme_style = 'palenight-community' 
 " let g:material_theme_style = 'ocean-community' 
 " let g:material_theme_style = 'lighter-community' 
-let g:material_theme_style = 'darker-community'
+" let g:material_theme_style = 'darker-community'
 colorscheme material
 " -------------------------------
 

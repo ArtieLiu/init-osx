@@ -15,6 +15,7 @@ alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.config/nvim/init.vim'
 alias zed="/Applications/Zed.app/Contents/MacOS/cli"
 alias idea='hap run -- idea'
+alias top='btop'
 
 # ---------- git ------------
 # alias cmt='git commit -m'

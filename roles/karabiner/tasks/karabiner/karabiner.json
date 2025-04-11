@@ -24,6 +24,7 @@
                         ]
                     },
                     {
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "space to space/ctrl",
