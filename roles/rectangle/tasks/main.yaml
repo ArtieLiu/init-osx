@@ -1,0 +1,5 @@
+- name: "Installing rectangle"
+  community.general.homebrew_cask:
+    name: 'rectangle'
+    state: present
+    update_homebrew: no
