@@ -20,7 +20,7 @@
     - topnotch
 
     # dev
-    - alacrity
+    - alacritty
     - sublime
     - zsh
     - vim
