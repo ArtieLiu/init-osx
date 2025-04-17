@@ -1,0 +1,5 @@
+- name: "Installing alacritty"
+  community.general.homebrew_cask:
+    name: 'alacritty'
+    state: present
+    update_homebrew: no

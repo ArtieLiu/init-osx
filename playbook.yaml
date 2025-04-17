@@ -4,11 +4,9 @@
     # shortcuts
     - karabiner
     - hammerspoon
-    - spectacle
+    - rectangle
     - multitouch
     - raycast
-#    - hyperkey
-    - contexts
 
     # helpers
     - bartender
@@ -21,13 +19,12 @@
     - localsend
 
     # dev
-#    - alacrity // install manually
+    - alacrity
     - sublime
     - zsh
     - vim
     - git
     - k9s
-#    - rancher
     - orbstack
     - intellij-idea
 
