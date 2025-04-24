@@ -1,3 +1,4 @@
+alias cdd='cd ~/Desktop'
 alias x='exit'
 alias tree="tree -C"
 alias o="open"
@@ -19,6 +20,7 @@ alias top='btop'
 
 # ---------- git ------------
 # alias cmt='git commit -m'
+alias lg='lazygit'
 alias g='lazygit'
 alias cmt='/usr/local/bin/cmt'
 alias amend='git commit --amend --no-edit'
