@@ -17,26 +17,25 @@ set noerrorbells
 " paste without yanking the deleted text
 xnoremap p P
 
-
-nnoremap z :action MaximizeEditorInSplit<CR>
-nnoremap t :action ActivateTerminalToolWindow<CR>
-nnoremap ] :action GotoImplementation<CR>
-nnoremap [ :action GotoDeclaration<CR>
-nnoremap I :action GotoImplementation<CR>
-nnoremap f :action FindInPath<CR>
-vnoremap f :action FindInPath<CR>
-nnoremap R :action RunAnything<CR>
-nnoremap / :action GotoUrlAction<CR>
-nnoremap ge :action GotoNextError<CR>
-nnoremap r :action RunClass<CR>
-" nnoremap O :action GotoFile<CR>
-"nnoremap N :action NotebookInsertCellBelowToolbarAction<CR>
-"nnoremap J :action StretchSplitToBottom<CR>
-nnoremap K :action StretchSplitToTop<CR>
-nnoremap H :action StretchSplitToLeft<CR>
-nnoremap L :action StretchSplitToRight<CR>
 " nnoremap H :action PreviousTab<CR>
 " nnoremap L :action NextTab<CR>
+" nnoremap O :action GotoFile<CR>
+"nnoremap J :action StretchSplitToBottom<CR>
+"nnoremap N :action NotebookInsertCellBelowToolbarAction<CR>
+nnoremap / :action GotoUrlAction<CR>
+nnoremap H :action StretchSplitToLeft<CR>
+nnoremap I :action GotoImplementation<CR>
+nnoremap K :action StretchSplitToTop<CR>
+nnoremap L :action StretchSplitToRight<CR>
+nnoremap R :action RunAnything<CR>
+nnoremap [ :action GotoDeclaration<CR>
+nnoremap ] :action GotoImplementation<CR>
+nnoremap f :action FindInPath<CR>
+nnoremap ge :action GotoNextError<CR>
+nnoremap r :action RunClass<CR>
+nnoremap t :action ActivateTerminalToolWindow<CR>
+nnoremap z :action MaximizeEditorInSplit<CR>
+vnoremap f :action FindInPath<CR>
 
 nnoremap <leader>a :action GotoAction<CR>
 nnoremap <leader>bk :action ToggleLineBreakpoint<CR>
@@ -58,6 +57,7 @@ nnoremap <leader>t :action GotoTest<CR>
 nnoremap <leader>x :action CloseProject<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 vnoremap <leader>ev :action EvaluateExpression<CR>
+nnoremap <leader>r :action RenameFile<CR>
 
 " ========= TABs ============"
 map <leader>mr :action MoveTabRight<CR>

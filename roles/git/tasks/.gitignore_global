@@ -7,4 +7,5 @@
 **/scratches/
 **/node_modules/
 .env
+.envrc
 **/.run
