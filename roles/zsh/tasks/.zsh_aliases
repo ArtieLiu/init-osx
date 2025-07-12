@@ -1,3 +1,8 @@
+# -------------- fix alacritty terminal ------------
+# https://github.com/alacritty/alacritty/issues/3932
+alias ssh='TERM=xterm-256color ssh'
+
+# -------------- common ------------
 alias cdd='cd ~/Desktop'
 alias x='exit'
 alias tree="tree -C"
@@ -18,6 +23,12 @@ alias vimrc='vim ~/.config/nvim/init.vim'
 alias zed="/Applications/Zed.app/Contents/MacOS/cli"
 alias idea='hap run -- idea'
 alias top='btop'
+# alias nvm='fnm'
+
+# ------------- tmux -------------
+alias t='tmux'
+alias ta='tmux attach'
+alias tat='tmux attach -t'
 
 # ---------- git ------------
 # alias cmt='git commit -m'
@@ -26,6 +37,7 @@ alias g='lazygit'
 alias cmt='/usr/local/bin/cmt'
 alias amend='git commit --amend --no-edit'
 alias gcom='gco main'
+alias gcoi='git checkout $(git branch | fzf)'     
 alias rebase='git rebase'
 alias stash='git stash'
 alias push='git push'
@@ -60,10 +72,14 @@ alias down='docker compose down'
 alias ld='lazydocker'
 
 # ---------- kubernetes ------------
-alias k='k9s'
+alias k='kubectl'
 
 alias kt='awsume fe-test-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:862276445914:cluster/test; k9s'
 alias kp='awsume fe-prod-poweruser; kubectl config use-context arn:aws:eks:ap-southeast-2:975616425746:cluster/prod; k9s'
+
+logs() {
+  stern "service/$1" | python3 '/Users/yinan/Library/Application Support/k9s/process-logs-svc.py'
+}
 
 # ----------- aws ------------------
 alias loginaws='awsume fe-test-poweruser'

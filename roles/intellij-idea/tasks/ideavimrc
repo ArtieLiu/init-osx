@@ -24,13 +24,12 @@ xnoremap p P
 "nnoremap N :action NotebookInsertCellBelowToolbarAction<CR>
 nnoremap / :action GotoUrlAction<CR>
 nnoremap H :action StretchSplitToLeft<CR>
-nnoremap I :action GotoImplementation<CR>
-nnoremap K :action StretchSplitToTop<CR>
-nnoremap L :action StretchSplitToRight<CR>
+" nnoremap I :action GotoImplementation<CR>
+nnoremap L :action ReformatCode<CR>
 nnoremap R :action RunAnything<CR>
 nnoremap [ :action GotoDeclaration<CR>
 nnoremap ] :action GotoImplementation<CR>
-nnoremap f :action FindInPath<CR>
+" nnoremap f :action FindInPath<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap r :action RunClass<CR>
 nnoremap t :action ActivateTerminalToolWindow<CR>
@@ -70,7 +69,7 @@ set easymotion
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=8
+set scrolloff=0
 
 " Do incremental searching.
 set incsearch
@@ -92,6 +91,18 @@ nmap <leader>7 :action GotoBookmark7<CR>
 nmap <leader>8 :action GotoBookmark8<CR>
 nmap <leader>9 :action GotoBookmark9<CR>
 nnoremap <C-D-v> <C-v>
+
+" intellij sets bookmarks globally, this prevents jumping to bookmarks in other projects
+" nmap 0 :action GotoBookmark0<CR>
+nmap 1 :action GotoBookmark1<CR>
+nmap 2 :action GotoBookmark2<CR>
+nmap 3 :action GotoBookmark3<CR>
+nmap 4 :action GotoBookmark4<CR>
+nmap 5 :action GotoBookmark5<CR>
+nmap 6 :action GotoBookmark6<CR>
+nmap 7 :action GotoBookmark7<CR>
+nmap 8 :action GotoBookmark8<CR>
+nmap 9 :action GotoBookmark9<CR>
 
 " https://github.com/dbakker/vim-paragraph-motion#vim-paragraph-motion
 set vim-paragraph-motion

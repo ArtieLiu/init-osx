@@ -7,7 +7,7 @@ HYPER      = {"ctrl", "shift" }
 
 -- ref: https://gist.github.com/rmcdongit/f66ff91e0dad78d4d6346a75ded4b751?permalink_comment_id=4286384
 -- ref: https://github.com/piarasj/piarasj.github.io/blob/master/ventura_settings.md#ventura-system-settings
-hs.hotkey.bind(HYPER, "y",
+hs.hotkey.bind(HYPER_LITE, "y",
                function()
                    hs.execute("open -b com.apple.systempreferences /System/Library/PreferencePanes/Displays.prefPane")
                end)
