@@ -29,7 +29,6 @@ nnoremap L :action ReformatCode<CR>
 nnoremap R :action RunAnything<CR>
 nnoremap [ :action GotoDeclaration<CR>
 nnoremap ] :action GotoImplementation<CR>
-" nnoremap f :action FindInPath<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap r :action RunClass<CR>
 nnoremap t :action ActivateTerminalToolWindow<CR>
@@ -47,6 +46,7 @@ nnoremap <leader>h :action HideActiveWindow<CR>
 nnoremap <leader>d :action DebugClass<CR>
 nnoremap <leader>v :action IntroduceVariable<CR>
 nnoremap <leader>l :action SelectInProjectView<CR>
+nnoremap <leader>f :action FindInPath<CR>
 " nnoremap <leader>m :action ToggleBookmarkWithMnemonic<CR>
 nnoremap <leader>n :action RenameElement<CR>
 "nnoremap <leader>r :action RunClass<CR>
